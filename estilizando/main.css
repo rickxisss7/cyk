@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+
+.main-start {
+
+    display: flex;
+    scrollbar-width: none;
+    overflow-x: auto;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 80px auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+.game {
+    text-align: center;
+    /* background-color: rgb(22, 22, 22); */
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 205px;
+    /* margin: 20px 50px; */
+  
+}
+
+.game img {
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+  cursor: pointer;
+}
+
+.game h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.game p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transform: translateY(10px);
+}
+
+
+
+
+/* test */
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.arrow.left {
+    left: 80px;
+    top: 390px;
+}
+
+.arrow.right {
+    right: 100px;
+    top: 390px;
+}
+
+
+
+.games-wrapper::before,
+.games-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    /* largura do fade */
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+    /* não bloquear cliques */
+}
+
+.games-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.games-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+@keyframes fadeScroll {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-animation {
+    animation: fadeScroll 0.6s ease;
+}
+
+
+
+
+
+
+
+
+/* PRIMARY PART MAIN */
+
+.main-part1 {
+    margin-top: 50px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 10px;
+    margin: 0 10px;
+
+}
+
+
+#slide-img {
+    width: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transition:
+        opacity 1.5s ease-in-out,
+        transform 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+#slide-img.revelar {
+    clip-path: inset(0 0% 0 0);
+    /* revela tudo */
+}
+
+.slide-content img {
+    width: 700px;
+    border-radius: 10px;
+}
+
+.slide-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 30px;
+
+}
+
+.info {
+    background-color: rgba(53, 53, 53, 0.178);
+    box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.11);
+    height: 220px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.info h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+.info p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+#prev {
+    display: none;
+}
+
+#next {
+    display: none;
+}
+
+#game-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+}
+
+
+#game-price {
+    font-family: "Poppins", sans-serif;
+    text-decoration: line-through;
+    font-size: 13px;
+    color: rgb(158, 158, 158);
+    margin-top: 10px;
+
+}
+
+#game-price2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    background-color: rgb(255, 26, 26);
+    width: 130px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECOND PART MAIN */
+
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.games-new {
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.trailer {
+    display: none;
+    width: 400px;
+    transform: translateY(-220px);
+
+}
+
+.games-new p {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.games-new img {
+    border-radius: 10px;
+    width: 390px;
+    padding: 5px;
+}
+
+.games-new video {
+    transform: translateY(-452px);
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.new p {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-right: 900px;
+}
+
+/* MAIN PART 2 ( START ) */
+
+.main-part2 {
+    margin-bottom: 100px;
+}
+
+.games-online {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    transform: translateY(100px);
+    text-align: center;
+}
+
+.game-online {
+    cursor: pointer;
+}
+
+.game-online img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game-online p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.jon {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    transform: translateY(80px);
+    margin-right: 900px;
+    cursor: pointer;
+}
+
+.free {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.377);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+
+}
+
+/* MAIN PART2 (END) */
+
+
+/* MAIN PART3 (START) */
+.games-releases {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    transform: translateY(100px);
+    text-align: center;
+}
+
+.game-launch img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game-launch {
+    cursor: pointer;
+}
+
+.game-launch p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.price {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  font-size: 15px;
+
+}

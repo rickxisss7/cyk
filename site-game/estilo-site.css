@@ -1,0 +1,42 @@
+* {
+    margin: 0 ;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game {
+    text-align: center;
+    /* background-color: rgb(22, 22, 22); */
+    border-radius: 10px;
+    padding: 10px;
+     margin: 0px 20px; 
+}
+
+.game img   {
+  width: 180px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.game h2 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+}
+
+.game p {
+   font-family: "Roboto", sans-serif;
+     font-size: 15px;
+     font-weight: 500;
+    transform: translateY(10px);
+    }

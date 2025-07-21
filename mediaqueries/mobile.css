@@ -1,0 +1,203 @@
+/* header */
+
+@media (min-width: 0px) and (max-width: 768px) {
+
+.menu-header {
+    display: none;
+}
+
+.download {
+    display: none;
+}
+
+.menu-interact {
+    display: none;
+}
+
+.search-box {
+    
+}
+
+#searchInput {
+    width: 60%;
+    transform: translateX(200px);
+    
+}
+
+#suggestions {
+    transform: translateX(130px);
+    width: 300px;
+}
+
+.search-menu {
+
+}
+
+
+/* end header */
+
+/* main start  */
+
+.main-part1 {
+ 
+}
+
+
+#game-desc {
+    display: none;
+}
+
+#game-title {
+font-size: 18px;
+}
+
+#game-price2 {
+    font-size: 17px;
+}
+
+.info {
+   box-shadow: none;
+   /* background-color: rgba(0, 0, 0, 0); */
+}
+
+.jon {
+    margin-right: 180px;
+}
+
+.slide-content {
+   
+}
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#slide-img {
+    width: 60%;
+    
+}
+
+.arrow.left {
+top: 580px;
+left: 200px;
+}
+
+.arrow.right {
+    right: 200px;
+    top: 580px;
+}
+
+#next {
+
+}
+
+
+.games-online {
+    display: flex;
+    flex-wrap: wrap;
+  gap: 15px; /* espaço entre os cards */
+  overflow-x: auto; /* permite rolar horizontalmente */
+  scroll-snap-type: x mandatory; /* efeito de encaixe */
+  -webkit-overflow-scrolling: touch; /* rolagem suave no iOS */
+  padding: 10px 0;
+
+}
+
+.game-online {
+      flex: 0 0 auto; /* não encolher */
+  scroll-snap-align: start; /* encaixar início do card */
+  background: #00000000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 160px; /* largura fixa para cada card */
+}
+
+.game-online img {
+    width: 100%;
+  height: 180px;
+  object-fit: cover; /* preenche sem distorcer */
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.game-online a.free {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #fff;
+  background: #28a745;
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+.game-online p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* outra */
+
+
+.games-releases {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  overflow-x: auto;            /* permite rolagem horizontal */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* suave no iOS */
+  padding: 10px 0px;
+}
+
+.game-launch {
+  flex: 0 0 auto;              /* impede encolhimento */
+  scroll-snap-align: start;
+  background: #00000000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 160px;                /* largura fixa do card */
+}
+
+.game-launch img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.game-launch p {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.game-launch a.price {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  background: #ff0000;
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+/* carrosel img */
+
+.main-start {
+    
+     
+}
+
+.game {
+    padding: 10px;
+    flex: 0 0 205px;
+}
+
+}

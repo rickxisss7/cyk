@@ -1,0 +1,23 @@
+.resmatered {
+    color: rgb(255, 136, 25);
+}
+
+.v {
+  background: linear-gradient(to top, rgb(214, 17, 17), rgb(189, 20, 20), rgb(136, 6, 82), rgb(165, 16, 115));
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
+
+.ragnarock {
+ color: rgb(0, 68, 255);
+}
+
+#game-price {
+ font-family: "Poppins", sans-serif;
+}
+
+  .arrow-right {
+    font-size: 15px;
+    font-weight: 200;
+ 
+  }

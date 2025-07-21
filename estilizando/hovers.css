@@ -1,0 +1,8 @@
+.suggestions a:hover {
+    color: #000;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
