@@ -42,7 +42,7 @@ const games = [
     },
     {
         name: "Elden Ring",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "elden-ring/elden.html",
         img: "imagens-games/elden-ring.jpg"
     },
     {

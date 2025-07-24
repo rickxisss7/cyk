@@ -48,7 +48,7 @@
 }
 
 #game-title {
-font-size: 18px;
+font-size: 23px;
 }
 
 #game-price2 {
@@ -57,24 +57,39 @@ font-size: 18px;
 
 .info {
    box-shadow: none;
-   /* background-color: rgba(0, 0, 0, 0); */
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center; 
+    align-items: center;
+    transform: translateY(-20px);
 }
 
 .jon {
     margin-right: 180px;
 }
 
+#game-price2 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+}
+
 .slide-content {
-   
+      display: grid;
+      justify-items: center;
 }
 
 .slider {
     width: 80%;
+ height: 350px;
     margin: 0 auto;
+    max-width: 400px;
+
 }
 
 #slide-img {
-    width: 60%;
+    width: 115%;
+    height: 100%;
+    
     
 }
 
@@ -159,7 +174,7 @@ left: 200px;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  width: 160px;                /* largura fixa do card */
+  width: 160px;               /* largura fixa do card */
 }
 
 .game-launch img {
@@ -192,7 +207,7 @@ left: 200px;
 
 .main-start {
     
-     
+     display: none;
 }
 
 .game {

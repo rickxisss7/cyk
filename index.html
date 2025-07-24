@@ -23,15 +23,15 @@
     <header>
         <div class="header1">
             <div class="menu-img">
-                <img src="logos/CYKLOGO-removebg-preview.png" alt="" width="100px">
+                <a href="index.html"><img src="logos/CYKLOGO-removebg-preview.png" alt="" width="100px"></a>
             </div>
             <div class="menu-header">
                 <h1 id="active" class="active">Loja</h1>
-                <h1>Minha Biblioteca</h1>
+                <h1>Meu Carrinho</h1>
                 <h1>Suporte</h1>
             </div>
             <div class="menu-btn">
-                <a class="download" href="#">Download</a>
+                <a class="download" href="download/downloadapk.html">Download</a>
                 <a class="log" href="#">Login</a>
             </div>
         </div>
@@ -61,21 +61,21 @@
             <button class="arrow left">&#10094;</button>
 
             <div class="game">
-                <img src="imagens-games/Assassins_Creed_Valhalla_capa.png" alt="">
+                <a href="assasins-creed-valhalla.html"><img src="imagens-games/Assassins_Creed_Valhalla_capa.png" alt=""></a>
                 <h2>Assassin's Creed Valhalla</h2>
             </div>
             <div class="game">
-                <img src="imagens-games/forzacapa.avif" alt="">
+                <a href="forza.html"><img src="imagens-games/forzacapa.avif" alt=""></a>
                 <h2>Forza Horizon 5</h2>
 
             </div>
             <div class="game">
-                <img src="imagens-games/Grand_Theft_Auto_V_capa.png" alt="">
+                <a href="gtav.html"><img src="imagens-games/Grand_Theft_Auto_V_capa.png" alt=""></a>
                 <h2>Grand Theft Auto V</h2>
 
             </div>
             <div class="game">
-                <img src="imagens-games/reddead2.avif" alt="">
+                <a href="red-dead2.html"><img src="imagens-games/reddead2.avif" alt=""></a>
                 <h2>Red Dead Redemption II</h2>
 
             </div>
@@ -84,7 +84,7 @@
                 <h2>Days Gone</h2>
             </div>
             <div class="game">
-                <img src="imagens-games/Elden_Ring_capa.jpg" alt="">
+                <a href="elden-ring/elden.html"><img src="imagens-games/Elden_Ring_capa.jpg" alt=""></a>
                 <h2>Elden Ring</h2>
             </div>
             <div class="game">
@@ -181,27 +181,51 @@
         <div class="main-part3">
             <p class="jon"> Lançamentos <span class="arrow-right"> → </span></p>
             <div class="games-releases">
-                <div class="game-launch">
-                    <img src="imagens-games/f1-capa.avif" alt="" id="on">
-                    <p>F1 25</p>
-                    <a href="#" class="price">R$ 249,90</a>
+                <div>
+                    <div class="game-launch">
+                        <img src="imagens-games/f1-capa.avif" alt="" id="on">
+                        <p>F1 25</p>
+                        <a href="#" class="price">R$ 249,90</a>
+                    </div>
+                    <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('F1 25')">
+                    </div>
                 </div>
-                <div class="game-launch">
-                    <img src="imagens-games/alan-wake2-capa.jpeg" alt="" id="on">
-                    <p>Alan Wake II</p>
-                    <a href="#" class="price">R$ 230,00</a>
+                <div>
+                    <div class="game-launch">
+                        <img src="imagens-games/alan-wake2-capa.jpeg" alt="" id="on">
+                        <p>Alan Wake II</p>
+                        <a href="#" class="price">R$ 230,00</a>
+                    </div>
+                    <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Alan Wake II')">
+                    </div>
                 </div>
-                <div class="game-launch">
-                    <img src="imagens-games/mortal-kombat1-capa.jpg" alt="" id="on">
-                    <p>Mortal Kombat 1</p>
-                    <a href="#" class="price">R$ 210,00</a>
+                <div>
+                    <div class="game-launch">
+                        <img src="imagens-games/mortal-kombat1-capa.jpg" alt="" id="on">
+                        <p>Mortal Kombat 1</p>
+                        <a href="#" class="price">R$ 210,00</a>
+                    </div>
+                    <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Mortal Kombat 1')">
+                    </div>
                 </div>
-                <div class="game-launch">
-                    <img src="imagens-games/spiderman-capa.jpeg" alt="" id="on">
-                    <p>Spider Man Remastered</p>
-                    <a href="#" class="price">R$ 229,90</a>
+                <div>
+                    <div class="game-launch">
+                        <img src="imagens-games/spiderman-capa.jpeg" alt="" id="on">
+                        <p>Spider Man Remastered</p>
+                        <a href="#" class="price">R$ 229,90</a>
+                    </div>
+                    <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Spider Man Remastered')">
+                    </div>
                 </div>
             </div>
+        </div>
+        <div id="mensagem"
+            style="display:none; padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border:1px solid #c3e6cb; border-radius:4px;">
+            <!-- a mensagem aparece aqui -->
         </div>
 
     </main>

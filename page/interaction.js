@@ -117,3 +117,48 @@ prev.addEventListener('click', reiniciarAutoPlay);
 mostrarJogo(indiceAtual);
 
 
+// BIBLIOTECA GAMES
+
+  // Carrega carrinho existente
+  let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+  function adicionarAoCarrinho(jogo) {
+    carrinho.push(jogo);
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    alert(jogo + " adicionado ao carrinho!");
+  }
+
+  // Quando clicar em "Meu Carrinho", vai para carrinho.html
+  document.getElementById('menu-carrinho').addEventListener('click', function() {
+    window.location.href = 'carrinho.html';
+  });
+
+
+
+// novo
+
+function adicionarAoCarrinho(jogo) {
+  // Verifica se o jogo já está no carrinho
+  if (carrinho.includes(jogo)) {
+    const msg = document.getElementById('mensagem');
+    msg.textContent = jogo + " já está no carrinho!";
+    msg.style.display = 'block';
+
+    setTimeout(() => {
+      msg.style.display = 'none';
+    }, 2000);
+    return; // sai da função para não adicionar duplicado
+  }
+
+  // Se não estiver, adiciona normalmente
+  carrinho.push(jogo);
+  localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+  const msg = document.getElementById('mensagem');
+  msg.textContent = jogo + " foi adicionado ao carrinho!";
+  msg.style.display = 'block';
+
+  setTimeout(() => {
+    msg.style.display = 'none';
+  }, 2000);
+}
