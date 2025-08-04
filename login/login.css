@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../video-pages/aa1.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo img {
+width: 100px;
+
+}
+
+.logo {
+    position: fixed;
+    transform: translateX(50px);
+}
+
+.container-log {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+
+}
+
+.login {
+    background-color: rgb(29, 29, 29);
+    width: 500px;
+    height: 550px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+
+
+}
+
+.login2 {
+    margin: 15px;
+
+}
+
+.login2 input {
+    margin-top: 10px;
+}
+
+.login3 {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+.login4 {
+    background-color: #1d1d1d00;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px auto;
+}
+
+.login4 p {
+    font-size: 14px;
+    color: rgba(184, 184, 184, 0.726)  ;
+}
+
+.login-google {
+    background-color: #111111;
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    margin: 6px auto;
+
+}
+
+.login-google img {
+    background-color: white;
+    padding: 3px;
+    border-radius: 30px;
+    transform: translateX(-154px);
+}
+
+.login-google a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#emaill {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(68, 68, 68);
+    color: white;
+
+}
+
+#emaill::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#passwordd {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+#passwordd::placeholder {
+    color: white;
+}
+
+
+.new-account a {
+    /* text-decoration: none; */
+    color: rgb(255, 50, 50);
+    font-family: "Poppins", sans-serif;
+}
+
+.text-login {
+    color: white;
+}
+
+
+.enter {
+    margin: 0 auto;
+    background-color: red;
+    padding: 4px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.enter a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.ccc {}
+
+
+.login-psn {
+    background-color: #111111;
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    margin: 6px auto;
+}
+
+.login-psn img {
+    background-color: rgb(0, 89, 255);
+    padding: 3px;
+    border-radius: 30px;
+    transform: translateX(-138px);
+}
+
+.login-psn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+
+.login-epic {
+    background-color: #111111;
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    margin: 6px auto;
+}
+
+.login-epic img {
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 30px;
+    transform: translateX(-135px);
+}
+
+.login-epic a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+
+.login-steam {
+    background-color: #111111;
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    margin: 6px auto;
+}
+
+.login-steam img {
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 30px;
+    transform: translateX(-157px);
+}
+
+.login-steam a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.login-apple {
+    background-color: #111111;
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    margin: 6px auto;
+}
+
+.login-apple img {
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 30px;
+    transform: translateX(-157px);
+}
+
+.login-apple a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+/* footer */
+
+.problems {
+    margin-top: 15px;
+}
+.problems p {
+    margin-top: 5px;
+    font-size: 13px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.problems a{
+    color: rgb(255, 80, 80);
+    
+}
+
+.suporte {
+   font-size: 13px;
+   color: white;
+    display: flex;
+    justify-content: center;
+   margin-top: 5px;
+}

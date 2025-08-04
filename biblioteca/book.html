@@ -1,80 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Carrinho</title>
-<style>
-  body { font-family: Arial, sans-serif; margin: 20px; }
-  ul { padding: 0; }
-  li {
-    list-style: none;
-    border-bottom: 1px solid #ccc;
-    padding: 8px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  button {
-    padding: 5px 10px;
-    background: #f44336;
-    border: none;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  button:hover {
-    background: #d32f2f;
-  }
-  a {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #2196f3;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Carrinho</title>
+  <link rel="stylesheet" href="estilizando/estilo1.css">
+  <link rel="stylesheet" href="fonts.css">
+
 </head>
+
 <body>
 
-<h1>🛒 Meu Carrinho</h1>
-<ul id="lista-carrinho"></ul>
+  <div class="text-princ">
+    <h1>🛒 Meu Carrinho</h1>
+  </div>
+  <div class="contt">
+    <ul id="lista-carrinho"></ul>
+  </div>
 
-<a href="../index.html">⬅️ Voltar para loja</a>
+  <div class="back">
+    <a href="../index.html">⬅ Voltar para loja</a>
+  </div>
 
-<script>
-  // Carrega carrinho do localStorage
-  let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-  const lista = document.getElementById('lista-carrinho');
 
-  function atualizarCarrinho() {
-    lista.innerHTML = '';
-    if (carrinho.length === 0) {
-      lista.innerHTML = '<li>Seu carrinho está vazio.</li>';
-      return;
-    }
-    carrinho.forEach((jogo, index) => {
-      const li = document.createElement('li');
-      li.textContent = jogo;
-
-      const btnRemover = document.createElement('button');
-      btnRemover.textContent = 'Remover';
-      btnRemover.onclick = function() {
-        removerDoCarrinho(index);
-      };
-
-      li.appendChild(btnRemover);
-      lista.appendChild(li);
-    });
-  }
-
-  function removerDoCarrinho(index) {
-    carrinho.splice(index, 1);
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    atualizarCarrinho();
-  }
-
-  atualizarCarrinho();
-</script>
-
+  <script src="cod.js"></script>
 </body>
+
 </html>

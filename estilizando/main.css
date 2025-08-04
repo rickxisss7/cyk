@@ -74,8 +74,6 @@
     top: 390px;
 }
 
-
-
 .games-wrapper::before,
 .games-wrapper::after {
     content: "";
@@ -223,6 +221,14 @@
     margin-top: 10px;
 }
 
+#info-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#info-link * {
+  text-decoration: none;
+}
 
 
 

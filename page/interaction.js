@@ -24,21 +24,24 @@ const jogos = [
     titulo: 'God Of War Ragnarock',
     descricao: 'A continuação da saga nórdica de Kratos e Atreus, trazendo batalhas brutais, deuses implacáveis e uma história emocional sobre paternidade, destino e o fim dos tempos.',
     preco: 'R$ 309,90',
-    preco2: 'R$ 280,00'
+    preco2: 'R$ 280,00',
+    link: 'god-of-war-ragnarock.html'
   },
   {
     img: 'imagens-games/elden-ring2.avif',
     titulo: 'Elden Ring',
     descricao: 'Um vasto RPG de ação em mundo aberto, onde o jogador explora as Terras Intermédias enfrentando chefes desafiadores, segredos escondidos e uma narrativa sombria criada em colaboração com George R. R. Martin.',
     preco: 'R$ 289,90',
-    preco2: 'R$ 240,00'
+    preco2: 'R$ 240,00',
+    link: ''
   },
   {
     img: 'imagens-games/uncharted2.avif',
     titulo: 'Uncharted 4',
     descricao: 'Uma aventura cinematográfica que acompanha Nathan Drake em sua última jornada, misturando exploração, escaladas perigosas, quebra‑cabeças e tiroteios em cenários exuberantes ao redor do mundo.',
     preco: 'R$ 299,90',
-    preco2: 'R$ 256,00'
+    preco2: 'R$ 256,00',
+    link: 'god-of-war-ragnarock.html'
   },
 
   {
@@ -46,14 +49,16 @@ const jogos = [
     titulo: 'S.T.A.L.K.E.R. 2',
     descricao: 'Um jogo de tiro em primeira pessoa com elementos de sobrevivência e terror, ambientado na Zona de Exclusão de Chernobyl. Você explora um mundo aberto hostil, cheio de anomalias, mutantes e facções rivais, enquanto busca artefatos valiosos e desvenda mistérios sombrios em meio a uma atmosfera densa e perigosa.',
     preco: 'R$ 300,00',
-    preco2: 'R$ 280,00'
+    preco2: 'R$ 280,00',
+    link: ''
   },
   {
     img: 'imagens-games/thewitcher3.jpeg',
     titulo: 'The Witcher',
     descricao: 'Um épico de fantasia onde você vive como Geralt de Rívia, um caçador de monstros em busca de sua filha adotiva, atravessando um mundo aberto cheio de escolhas morais, intrigas políticas e combates intensos.',
     preco: 'R$ 279,90',
-    preco2: 'R$ 240,00'
+    preco2: 'R$ 240,00',
+    link: ''
   }
 ];
 
@@ -67,6 +72,9 @@ const gamePrice = document.getElementById('game-price');
 const gamePrice2 = document.getElementById('game-price2');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
+const slideLink = document.getElementById('slide-link');
+ const infoLink = document.getElementById('info-link');
+
 
 // função pra atualizar
 function mostrarJogo(index) {
@@ -75,8 +83,12 @@ function mostrarJogo(index) {
   gameTitle.textContent = jogo.titulo;
   gameDesc.textContent = jogo.descricao;
   gamePrice.textContent = jogo.preco;
-  gamePrice2.textContent = jogo.preco2
+  gamePrice2.textContent = jogo.preco2;
+  slideLink.href = jogo.link;
+   infoLink.href = jogo.link;
 }
+
+
 
 // funções de navegação
 function proximo() {
@@ -162,3 +174,4 @@ function adicionarAoCarrinho(jogo) {
     msg.style.display = 'none';
   }, 2000);
 }
+

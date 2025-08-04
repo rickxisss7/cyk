@@ -21,11 +21,11 @@ h1Elements.forEach(h1 => {
 
         // Decide para onde redirecionar baseado no texto
         if (texto === 'Loja') {
-            window.location.href = 'loja.html'; // página interna
+            window.location.href = 'index.html'; // página interna
         } else if (texto === 'Meu Carrinho') {
             window.location.href = 'biblioteca/book.html'; // página interna
         } else if (texto === 'Suporte') {
-            window.location.href = 'https://meusite.com/suporte'; // link externo ou outra página
+            window.location.href = 'suporte.html'; // link externo ou outra página
         }
     });
 });

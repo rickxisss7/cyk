@@ -1,0 +1,61 @@
+  body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #080808;
+      color: white;
+      font-family: "Poppins", sans-serif;
+  }
+
+  ul {
+      padding: 0;
+  }
+
+  li {
+      list-style: none;
+      
+      padding: 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  button {
+      padding: 5px 10px;
+      background: #f44336;
+      border: none;
+      color: #ffffff;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+
+  button:hover {
+      background: #d32f2f;
+  }
+
+
+  .back a {
+      background-color: #f30808;
+      display: inline-block;
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+  }
+
+
+
+
+
+  #lista-carrinho  {
+    background-color: #1b1b1b;
+    padding: 20px;
+  }
+
+   #lista-carrinho img {
+    display: none;
+   }
+

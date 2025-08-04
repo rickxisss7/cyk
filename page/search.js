@@ -2,17 +2,17 @@
 const games = [
     {
         name: "Resident Evil Village",
-        url: "/jogos/resident-evil-village.html",
+        url: "resident-evil-village.html",
         img: "imagens-games/resident-evil-village.jpg"
     },
     {
         name: "Spider Man Remastered",
-        url: "/jogos/spider-man-remastered.html",
+        url: "spider-man-remastered.html",
         img: "imagens-games/spiderman-resmatered.jpg"
     },
     {
         name: "Days Gone",
-        url: "/jogos/days-gone.html",
+        url: "days-gone.html",
         img: "imagens-games/daysgone.jpg"
     },
     {
@@ -22,12 +22,12 @@ const games = [
     },
     {
         name: "Red Dead Redemption 2",
-        url: "/jogos/read-dead-2.html",
+        url: "red-dead2.html",
         img: "imagens-games/red-dead-redemption2.jpg"
     },
     {
         name: "Grand Theft Auto V",
-        url: "/jogos/gta-v.html",
+        url: "gtav.html",
         img: "imagens-games/gtav.jpg"
     },
     {
@@ -37,17 +37,17 @@ const games = [
     },
     {
         name: "Resident Evil Biozard",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "resident-evil-7.html",
         img: "imagens-games/RESIDENT EVIL 7 biohazard Gold Edition.jpg"
     },
     {
         name: "Elden Ring",
-        url: "elden-ring/elden.html",
+        url: "elden-ring.html",
         img: "imagens-games/elden-ring.jpg"
     },
     {
         name: "God of War Ragnarock",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "god-of-war-ragnarock.html",
         img: "imagens-games/god-of-war-ragnarock2.jpg"
     },
     {
@@ -57,22 +57,22 @@ const games = [
     },
     {
         name: "The Last of Us Part II Remastered",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "the-last-of-us-resmatered.html",
         img: "imagens-games/the-last-of-us-resmatered.jpg"
     },
     {
         name: "Battlefield V",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "battlefield-v-.html",
         img: "imagens-games/Battlefield V.jpg"
     },
     {
         name: "Forza Horizon 5",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "forza.html",
         img: "imagens-games/forza-horizon5.jpg"
     },
     {
         name: "God of War",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "god-of-war-2018.html",
         img: "imagens-games/god-of-war-4.jpg"
     },
     {
@@ -82,17 +82,17 @@ const games = [
     },
     {
         name: "Metro Exodus",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "metro-exodus.html",
         img: "imagens-games/Metro Exodus.jpg"
     },
     {
         name: "S.T.A.L.K.E.R. 2",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "s.t.a.l.k.e.r.html",
         img: "imagens-games/S.T.A.L.K.E.R. 2 Heart of Chornobyl.jpg"
     },
     {
         name: "Dragon Ball Sparking Zero",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "dragon-ball-sparking-zero.html",
         img: "imagens-games/dragonbal-sparkingzero.jpg"
     },
     {
@@ -137,33 +137,51 @@ const games = [
     },
     {
         name: "Lies of P",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "lies-of-p.html",
         img: "imagens-games/Lies of P.jpg"
     },
-   {
+    {
         name: "Dark Souls 2",
         url: "/jogos/resident-evil-biozard.html",
         img: "imagens-games/dark souls 2.jpg"
     },
-   {
+    {
         name: "Assasin's Creed Valhalla",
         url: "/jogos/resident-evil-biozard.html",
         img: "imagens-games/Assassin's Creed Valhalla.jpg"
     },
- {
+    {
         name: "Assasin's Creed Mirage",
         url: "/jogos/resident-evil-biozard.html",
         img: "imagens-games/assasins-creed-mirage.jpg"
     },
-     {
+    {
         name: "Hogwarts Legacy",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "hogwarts-legacy.html",
         img: "imagens-games/hogwarts-legacy.jpg"
     },
     {
         name: "Dying Light 2",
         url: "/jogos/resident-evil-biozard.html",
         img: "imagens-games/dying-light22.jpg"
+    },
+
+    {
+        name: "Alan Wake 2",
+        url: "alan-wake2.html",
+        img: "imagens-games/alan-wake2.avif"
+    },
+
+    {
+        name: "F1 25",
+        url: "f1-25.html",
+        img: "imagens-games/f1-25.jpg"
+    },
+
+    {
+        name: "Mortal Kombat 1",
+        url: "mortal-komat1.html",
+        img: "imagens-games/mortal-kombat-1.jpg"
     },
 
 ];
