@@ -21,15 +21,14 @@
     padding: 10px;
     flex: 0 0 205px;
     /* margin: 20px 50px; */
-  
+
 }
 
 .game img {
     width: 180px;
     height: 250px;
     border-radius: 10px;
-    object-fit: cover;
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .game h2 {
@@ -217,17 +216,18 @@
     width: 130px;
     border-radius: 5px;
     text-align: center;
-    cursor: pointer;
     margin-top: 10px;
 }
 
 #info-link {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
+
 }
 
 #info-link * {
-  text-decoration: none;
+    text-decoration: none;
+
 }
 
 
@@ -288,7 +288,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-top: 50px;
     margin-bottom: 10px;
 }
@@ -323,7 +322,6 @@
 .game-online img {
     width: 250px;
     height: 300px;
-    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -359,6 +357,7 @@
 
 
 /* MAIN PART3 (START) */
+
 .games-releases {
     display: flex;
     gap: 30px;
@@ -370,7 +369,6 @@
 .game-launch img {
     width: 250px;
     height: 300px;
-    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -391,6 +389,279 @@
     color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-  font-size: 15px;
+    font-size: 15px;
 
+}
+
+/* main part 4 */
+
+.main-part4 {
+    margin-top: 100px;
+
+}
+
+.games-releases {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    transform: translateY(100px);
+    text-align: center;
+}
+
+.game-launch2 img {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.game-launch2 {
+    cursor: pointer;
+    background-color: rgba(49, 49, 49, 0.274);
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.game-launch2 p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ofert {
+    display: grid;
+    gap: 5px;
+}
+
+
+.price-descount {
+    text-decoration: line-through;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+
+}
+
+.descount {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+
+/* main part 5 */
+
+.main-part5 {
+    margin-top: 100px;
+}
+
+.main-part5 a {
+    text-decoration: none;
+    color: white;
+
+}
+
+#playstation-store {
+    margin: 0 180px;
+    width: 100px;
+}
+
+#xbox-store {
+    margin: 0 180px;
+    width: 100px;
+}
+
+.games-releases3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    transform: translateY(100px);
+    text-align: center;
+    background-color: #1c6bff42;
+    padding: 20px;
+}
+
+.game-launch3 img {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.game-launch3 {
+    cursor: pointer;
+    background-color: #ffffff0e;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.game-launch3 p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.price {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+
+/* main part 6 */
+
+.main-part6 {
+    margin-top: 100px;
+}
+
+.games-releases4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    transform: translateY(100px);
+    text-align: center;
+    background-color: #1cff6842;
+    padding: 20px;
+}
+
+.game-launch4 img {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.game-launch4 {
+    cursor: pointer;
+    background-color: #ffffff0e;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.game-launch4 p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.price {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+/* RODAPÉ DO SITE */
+
+.rodape {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    transform: translateY(150px);
+    background-color: rgb(3, 3, 3);
+
+    border-radius: 2px;
+
+}
+
+.rodape h1 {
+    font-size: 20px;
+}
+
+.cyk {
+    /* text-align: center;  */
+   
+}
+
+.dev {
+    
+
+}
+
+.cop {
+    margin-top: 25px;
+}
+
+.serv {
+    
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.social-media img {
+    width: 30px;
+    margin-top: 3px;
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.icons-medias {
+    display: flex;
+    gap: 10px;
+
+}
+
+.icons-medias a {
+    height: 0;
+}
+
+.links-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+
+.links-footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.719);
+    width: 0;
+}
+
+.created {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.created a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.copyright p {
+    color: rgba(255, 255, 255, 0.719);
+
+}
+
+.suporte a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.719);
+    width: 0;
 }

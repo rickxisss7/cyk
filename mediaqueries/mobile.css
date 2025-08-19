@@ -2,217 +2,374 @@
 
 @media (min-width: 0px) and (max-width: 768px) {
 
-.menu-header {
+  .menu-header {
     display: none;
-}
+  }
 
-.download {
+  .download {
     display: none;
-}
+  }
 
-.menu-interact {
+  .menu-interact {
     display: none;
-}
+  }
 
-.search-box {
-    
-}
+  .search-box {}
 
-#searchInput {
+  #searchInput {
     width: 60%;
     transform: translateX(200px);
-    
-}
+    z-index: 999;
+  }
 
-#suggestions {
-    transform: translateX(130px);
-    width: 300px;
-}
-
-.search-menu {
-
-}
-
-
-/* end header */
-
-/* main start  */
-
-.main-part1 {
- 
-}
+  #suggestions {
+    width: 350px;
+    transform: translateX(115px);
+    top: 0;
+    /* ou o valor que você precisa */
+    left: 0;
+    /* ou onde você quiser */
+    z-index: 9999;
+    /* garante que fique acima */
 
 
-#game-desc {
+  }
+
+  .search-menu {}
+
+
+  /* end header */
+
+  /* main start  */
+
+  .main-part1 {}
+
+
+  #game-desc {
     display: none;
-}
 
-#game-title {
-font-size: 23px;
-}
+  }
 
-#game-price2 {
+  #game-title {
+    font-size: 23px;
+    display: none;
+
+  }
+
+  #game-price2 {
     font-size: 17px;
-}
+    display: none;
+  }
 
-.info {
-   box-shadow: none;
+  #game-price {
+    display: none;
+  }
+
+  .info {
+    box-shadow: none;
     background-color: rgba(0, 0, 0, 0);
-    text-align: center; 
+    text-align: center;
     align-items: center;
-    transform: translateY(-20px);
-}
+    position: relative;
 
-.jon {
+  }
+
+  .jon {
     margin-right: 180px;
-}
+  }
 
-#game-price2 {
-  text-align: center;
-  margin: 0 auto;
-  padding: 5px;
-}
-
-.slide-content {
-      display: grid;
-      justify-items: center;
-}
-
-.slider {
-    width: 80%;
- height: 350px;
+  #game-price2 {
+    text-align: center;
     margin: 0 auto;
-    max-width: 400px;
+    padding: 5px;
+  }
 
-}
+  .slide-content {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px; */
+    display: block;
+  }
 
-#slide-img {
-    width: 115%;
-    height: 100%;
-    
-    
-}
+  .slider {
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+  }
 
-.arrow.left {
-top: 580px;
-left: 200px;
-}
+  #slide-img {
+    width: 400px;
+    height: 250px;
+    display: block;
 
-.arrow.right {
+
+  }
+
+  .arrow.left {
+    top: 580px;
+    left: 200px;
+  }
+
+  .arrow.right {
     right: 200px;
     top: 580px;
-}
+  }
 
-#next {
-
-}
+  #next {}
 
 
-.games-online {
+  .games-online {
     display: flex;
     flex-wrap: wrap;
-  gap: 15px; /* espaço entre os cards */
-  overflow-x: auto; /* permite rolar horizontalmente */
-  scroll-snap-type: x mandatory; /* efeito de encaixe */
-  -webkit-overflow-scrolling: touch; /* rolagem suave no iOS */
-  padding: 10px 0;
+    gap: 15px;
+    /* espaço entre os cards */
+    overflow-x: auto;
+    /* permite rolar horizontalmente */
+    scroll-snap-type: x mandatory;
+    /* efeito de encaixe */
+    -webkit-overflow-scrolling: touch;
+    /* rolagem suave no iOS */
+    padding: 10px 0;
 
-}
+  }
 
-.game-online {
-      flex: 0 0 auto; /* não encolher */
-  scroll-snap-align: start; /* encaixar início do card */
-  background: #00000000;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  width: 160px; /* largura fixa para cada card */
-}
+  .game-online {
+    flex: 0 0 auto;
+    /* não encolher */
+    scroll-snap-align: start;
+    /* encaixar início do card */
+    background: #00000000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 160px;
+    /* largura fixa para cada card */
+  }
 
-.game-online img {
+  .game-online img {
     width: 100%;
-  height: 180px;
-  object-fit: cover; /* preenche sem distorcer */
-  border-radius: 8px;
-  margin-bottom: 8px;
-}
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
 
-.game-online a.free {
-  display: inline-block;
-  margin-top: 5px;
-  font-size: 12px;
-  color: #fff;
-  background: #28a745;
-  padding: 4px 8px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-
-.game-online p {
-  margin: 5px 0;
-  font-size: 14px;
-}
-
-/* outra */
+  .game-online a.free {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #fff;
+    background: #28a745;
+    padding: 4px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
 
 
-.games-releases {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  overflow-x: auto;            /* permite rolagem horizontal */
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; /* suave no iOS */
-  padding: 10px 0px;
-}
+  .game-online p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
 
-.game-launch {
-  flex: 0 0 auto;              /* impede encolhimento */
-  scroll-snap-align: start;
-  background: #00000000;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  width: 160px;               /* largura fixa do card */
-}
-
-.game-launch img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 8px;
-}
-
-.game-launch p {
-  margin: 5px 0;
-  font-size: 13px;
-}
-
-.game-launch a.price {
-  display: inline-block;
-  margin-top: 5px;
-  font-size: 13px;
-  font-weight: bold;
-  color: #fff;
-  background: #ff0000;
-  padding: 4px 8px;
-  border-radius: 5px;
-  text-decoration: none;
-}
+  /* outra */
 
 
-/* carrosel img */
+  .games-releases {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    /* permite rolagem horizontal */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* suave no iOS */
+    padding: 10px 0px;
+  }
 
-.main-start {
-    
-     display: none;
-}
+  .game-launch {
+    flex: 0 0 auto;
+    /* impede encolhimento */
+    scroll-snap-align: start;
+    background: #00000000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 160px;
+    /* largura fixa do card */
+  }
 
-.game {
+  .game-launch img {
+    width: 100%;
+    height: 180px;
+
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .game-launch p {
+    margin: 5px 0;
+    font-size: 13px;
+  }
+
+  .game-launch a.price {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background: #ff0000;
+    padding: 4px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  /* ofertas main3 */
+  .descount {
+    /* background-color: rgb(255, 0, 0);
+  padding: 3px;
+  width: 150px;
+  margin: 0 auto; */
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #fff;
+    background: #ff0000;
+    padding: 4px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+
+  /* end ofertas */
+
+  /* main part5 */
+  .games-releases3 {
+    display: flex;
+
+  }
+
+  .game-launch3 {
+    width: 150px;
+  }
+
+  .game-launch3 img {
+    width: 150px;
+    height: 160px;
+  }
+
+  /* main part5 end */
+
+  /* main part6  */
+  .games-releases4 {
+    display: flex;
+
+  }
+
+  .game-launch4 {
+    width: 150px;
+  }
+
+  .game-launch4 img {
+    width: 150px;
+    height: 160px;
+  }
+
+  /* main part6 end */
+
+  /* footer */
+  footer {
+    font-size: 14px;
+  }
+
+  .rodape h1 {
+    font-size: 16px;
+  }
+
+  /* end footer */
+
+
+  /* carrosel img */
+
+  .main-start {
+
+    display: none;
+  }
+
+  .game {
     padding: 10px;
     flex: 0 0 205px;
-}
+  }
+
+  /* test */
+
+
+  .games-releases {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    /* permite rolagem horizontal */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* suave no iOS */
+    padding: 10px 0px;
+  }
+
+  .game-launch2 {
+    flex: 0 0 auto;
+    /* impede encolhimento */
+    scroll-snap-align: start;
+    background: #00000000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 160px;
+    /* largura fixa do card */
+  }
+
+  .game-launch2 img {
+    width: 100%;
+    height: 180px;
+
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .game-launch2 p {
+    margin: 5px 0;
+    font-size: 13px;
+  }
+
+  .game-launch2 a.price {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background: #ff0000;
+    padding: 4px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .main-part1-mobile {
+    display: block;
+    margin-bottom: 200px;
+  }
+
+  .main-mobile-first {
+    display: grid;
+    width: 410px;
+    
+    background-color: #0e0e0e;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 0 auto;
+    align-items: center;
+    gap: 10px;
+    margin-top: 80px;
+    border-radius: 10px;
+  }
 
 }

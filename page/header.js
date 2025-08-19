@@ -23,7 +23,7 @@ h1Elements.forEach(h1 => {
         if (texto === 'Loja') {
             window.location.href = 'index.html'; // página interna
         } else if (texto === 'Meu Carrinho') {
-            window.location.href = 'biblioteca/book.html'; // página interna
+            window.location.href = 'carrinho.html'; // página interna
         } else if (texto === 'Suporte') {
             window.location.href = 'suporte.html'; // link externo ou outra página
         }

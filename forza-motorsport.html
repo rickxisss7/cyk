@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ccc gaming</title>
+    <link rel="stylesheet" href="estilizando/header.css">
+    <link rel="stylesheet" href="estilizando/home.css">
+    <link rel="stylesheet" href="estilizando/header.css">
+    <link rel="stylesheet" href="estilizando/main.css">
+    <link rel="stylesheet" href="estilizando/footer.css">
+    <link rel="stylesheet" href="animations/animation.css">
+    <link rel="stylesheet" href="fontes/font.css">
+    <link rel="stylesheet" href="estilizando/spans.css">
+    <link rel="stylesheet" href="estilizando/hovers.css">
+    <link rel="stylesheet" href="stalker.css">
+    <style>
+         * {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ body {
+    background: #080808;
+    color: #f5f5f5;
+   
+  }
+
+  footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #000;
+    border-top: 2px solid #444;
+    font-size: 0.9rem;
+  }
+
+  /* search */
+
+  .search-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transform: translateX(-200px);
+    margin-top: 30px;
+
+}
+
+
+.search-box {
+    position: relative;
+    max-width: 400px;
+    /* margin: 40px auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    outline: none;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    transition: 0.3s;
+   
+}
+
+.menu-interact a {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+
+}
+
+.suggestions {
+    position: absolute;
+    width: 250%;
+    top: 120%;
+    left: 0;
+    padding: 5px;
+    right: 0;
+    background-color: rgba(128, 128, 128, 0.068);
+    /* cinza translúcido */
+    backdrop-filter: blur(20px);
+    /* intensidade do desfoque */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #333;
+    border-radius: 8px 8px 8px 8px;
+    max-height: 250px;
+    overflow-y: visible;
+    display: none;
+    z-index: 999;
+}
+
+.suggestions a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 0.5px solid #33333317;
+    transition: background 0.2s;
+}
+
+.suggestions a img {
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+
+.suggestions::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+
+.load-more-item {
+    display: block;
+    width: 100%;
+    text-align: start;
+    padding: 12px;
+    background-color: #22222200;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    border-radius: 0 0 8px 8px;
+}
+
+.xbox {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+    cursor: pointer;
+}
+
+.xbox a {
+    color: rgb(255, 255, 255);
+}
+
+.playstation {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.playstation a {
+    color: rgb(255, 255, 255);
+}
+
+.menu-interact {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  /* estilizando */
+
+  .container-ring {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+
+  }
+
+  .elden-ring {
+    width: 400px;
+    
+
+    
+  }
+
+  .elden-ring img {
+    width: 400px;
+    border-radius: 15px;
+  }
+
+  .eld {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    
+    
+  }
+
+  .elden-ring2 video {
+width: 600px;
+border-radius: 10px;
+  }
+
+  .car-buy {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    margin-top: 30px;
+   
+  }
+
+.car-buy a {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      background-color: rgb(255, 0, 0);
+      color: white;
+      text-align: center;
+      width: 280px;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+       text-decoration: none;
+}
+
+#carrinho {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+.dscnt {
+    text-decoration: line-through;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: #727272af;
+}
+
+.buyy {
+      font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+
+/* test */
+
+ .carrossel {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+  }
+  .imagem-principal {
+    width: 100%;
+    height: 370px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    margin-bottom: 15px;
+    transition: opacity 0.3s;
+  }
+  .miniaturas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .miniaturas img {
+    width: 130px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  .miniaturas img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  .miniaturas img.selecionada {
+    border: 2px solid #ffcc00;
+    opacity: 1;
+  }
+
+    .area-principal video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+  .car-buy a:hover {
+    background-color: rgb(138, 6, 6);
+    transition: 0.1s ease-in-out;
+  }
+
+  #carrinho:hover {
+    background-color: rgb(223, 223, 223);
+    transition: 0.1s ease-in-out;
+  }
+
+    /* mediaqueries */
+
+ @media (min-width: 0px) and (max-width: 768px) {
+  .menu-header {
+    display: none;
+  }
+.download {
+  display: none;
+}
+
+.menu-interact {
+  display: none;
+}
+
+.container-ring {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.imagem-principal {
+width: 85%;
+height: 220px;
+}
+
+.miniaturas img {
+  width: 180px;
+  height: 40px;
+}
+
+.elden-ring {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 0 auto;
+  
+}
+
+.elden-ring img {
+  width: 380px;
+  height: 180px;
+ margin-top: 50px;
+ margin-bottom: 5px;
+}
+
+.elden-ring p {
+ margin: 1px;
+}
+
+.car-buy {
+  margin: 10px auto;
+}
+
+
+.search-box input{
+  width: 100%;
+  transform: translateX(100px);
+}
+
+.suggestions {
+  width: 200%;
+  left: 100px;
+
+}
+ }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <div class="menu-img">
+                <a href="index.html"><img src="logos/CYKLOGO-removebg-preview.png" alt="" width="100px"></a>
+            </div>
+            <div class="menu-header">
+                <h1 id="active" class="active">Loja</h1>
+                <h1>Meu Carrinho</h1>
+                <h1>Suporte</h1>
+            </div>
+            <div class="menu-btn">
+                <a class="download" href="download/downloadapk.html">Download</a>
+                <a class="log" href="#">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-menu" id="search-Menu">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Pesquise na loja">
+                <div class="suggestions" id="suggestions"></div>
+
+            </div>
+            <div class="menu-interact">
+                <a href="#">Ofertas</a>
+                <div class="xbox">
+                    <a href="#">Xbox</a>
+                    <img src="../icons/xbox.png" alt="" width="18px">
+                </div>
+                <div class="playstation">
+                    <a href="#">Playstation</a>
+                    <img src="../icons/playstation.png" alt="" width="18px">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-ring">
+            <div class="elden-ring">
+                <img src="imagens-games/forza-motorsport.jpg" alt="">
+                <p class="eld">Forza MotorSport</p>
+                 <!-- <p class="dscnt"> R$ 329,90</p>  -->
+                <p class="buyy"> R$ 320,00</p>
+                <div class="car-buy">
+                    <button onclick="addByName('Forza MotorSport')" class="add-car">
+                        Adicionar ao Carrinho
+                    </button>
+                    <button class="buy-here">Compre Aqui</button>
+                </div>
+            </div>
+            <div class="elden-ring2">
+                <!-- <video src="../videos-games/elden-ring.webm" autoplay muted></video> -->
+                <div class="carrossel">
+                    <img id="imagem-principal" class="imagem-principal" src="img-/forza-motoesport-.jpg"
+                        alt="Imagem principal">
+
+                    <div class="miniaturas">
+                        <img src="img-/forza-motoesport-.jpg " class="selecionada" alt="thumb1">
+                        <img src="img-/forza-motoesport-2.jpg" alt="thumb2">
+                        <img src="img-/forza-motoesport-3.jpg" alt="thumb3">
+                        <img src="img-/forza-motoesport-4.jpg" alt="thumb4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="page/header.js"></script>
+    <script src="page/menu.js"></script>
+    <script src="page/site.js"></script>
+    <script src="page/rolagem.js"></script>
+    <script src="page/interaction.js"></script>
+    <script src="page/search.js"></script>
+    <script src="register/login.js"></script>
+    <script src="register/register.js"></script>
+    <script src="carrinho.js"></script>
+    <script>
+          const imagemPrincipal = document.getElementById('imagem-principal');
+   const miniaturas = document.querySelectorAll('.miniaturas img');
+   
+
+  miniaturas.forEach(mini => {
+    mini.addEventListener('click', () => {
+      // troca imagem principal
+      imagemPrincipal.style.opacity = 0; // animação de saída
+      setTimeout(() => {
+        imagemPrincipal.src = mini.src;
+        imagemPrincipal.style.opacity = 1;
+      }, 200);
+
+      // destaca miniatura selecionada
+      miniaturas.forEach(m => m.classList.remove('selecionada'));
+      mini.classList.add('selecionada');
+    });
+  });
+
+    
+
+
+  miniaturas.forEach(mini => {
+    mini.addEventListener('click', () => {
+      // Limpa seleção das miniaturas
+      miniaturas.forEach(m => m.classList.remove('selecionada'));
+      mini.classList.add('selecionada');
+
+      // Remove o conteúdo atual da área principal
+      areaPrincipal.innerHTML = '';
+
+      // Verifica o tipo da miniatura
+      const tipo = mini.getAttribute('data-type');
+      const src = mini.getAttribute('data-src');
+
+      if (tipo === 'img') {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = 'Imagem principal';
+        img.style.opacity = 0;
+        areaPrincipal.appendChild(img);
+        // efeito fade
+        setTimeout(() => img.style.opacity = 1, 50);
+      } else if (tipo === 'video') {
+        const video = document.createElement('video');
+        video.src = src;
+        video.controls = true;
+        video.autoplay = true;
+        video.style.opacity = 0;
+        areaPrincipal.appendChild(video);
+        setTimeout(() => video.style.opacity = 1, 50);
+      }
+    });
+  });
+
+
+   const area = document.getElementById('area-principal');
+
+  miniaturas.forEach(mini => {
+    mini.addEventListener('click', () => {
+      // remove destaque
+      miniaturas.forEach(m => m.classList.remove('selecionada'));
+      mini.classList.add('selecionada');
+
+      // limpa a área principal
+      area.innerHTML = '';
+
+      const tipo = mini.dataset.type;
+      const src = mini.dataset.src;
+
+      if (tipo === 'img') {
+        const img = document.createElement('img');
+        img.src = src;
+        area.appendChild(img);
+      } else if (tipo === 'video') {
+        const video = document.createElement('video');
+        video.src = src;
+        video.controls = true;
+        video.autoplay = true;
+        area.appendChild(video);
+      }
+    });
+  });
+    </script>
+</body>
+
+</html>

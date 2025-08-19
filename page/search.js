@@ -21,7 +21,7 @@ const games = [
         img: "imagens-games/dying-light.jpg"
     },
     {
-        name: "Red Dead Redemption 2",
+        name: "Red Dead Redemption II",
         url: "red-dead2.html",
         img: "imagens-games/red-dead-redemption2.jpg"
     },
@@ -36,7 +36,7 @@ const games = [
         img: "imagens-games/spiderman-miles-morales.jpg"
     },
     {
-        name: "Resident Evil Biozard",
+        name: "Resident Evil Biohazard",
         url: "resident-evil-7.html",
         img: "imagens-games/RESIDENT EVIL 7 biohazard Gold Edition.jpg"
     },
@@ -46,17 +46,17 @@ const games = [
         img: "imagens-games/elden-ring.jpg"
     },
     {
-        name: "God of War Ragnarock",
+        name: "God of War Ragnarok",
         url: "god-of-war-ragnarock.html",
         img: "imagens-games/god-of-war-ragnarock2.jpg"
     },
     {
         name: "Uncharted",
-        url: "/jogos/resident-evil-biozard.html",
+        url: "uncharted.html",
         img: "imagens-games/uncharted.jpg"
     },
     {
-        name: "The Last of Us Part II Remastered",
+        name: "The Last Of Us Part II",
         url: "the-last-of-us-resmatered.html",
         img: "imagens-games/the-last-of-us-resmatered.jpg"
     },
@@ -86,7 +86,7 @@ const games = [
         img: "imagens-games/Metro Exodus.jpg"
     },
     {
-        name: "S.T.A.L.K.E.R. 2",
+        name: "Stalker 2",
         url: "s.t.a.l.k.e.r.html",
         img: "imagens-games/S.T.A.L.K.E.R. 2 Heart of Chornobyl.jpg"
     },
@@ -136,7 +136,7 @@ const games = [
         img: "imagens-games/the-witcher.jpg"
     },
     {
-        name: "Lies of P",
+        name: "Lies Of P",
         url: "lies-of-p.html",
         img: "imagens-games/Lies of P.jpg"
     },
@@ -146,7 +146,7 @@ const games = [
         img: "imagens-games/dark souls 2.jpg"
     },
     {
-        name: "Assasin's Creed Valhalla",
+        name: "Assasins Creed Valhalla",
         url: "/jogos/resident-evil-biozard.html",
         img: "imagens-games/Assassin's Creed Valhalla.jpg"
     },
@@ -183,6 +183,60 @@ const games = [
         url: "mortal-komat1.html",
         img: "imagens-games/mortal-kombat-1.jpg"
     },
+
+    {
+        name: "Fortnite",
+        url: "fortnite.html",
+        img: "imagens-games/fortnite.avif"
+    },
+
+    {
+        name: "Call Of Duty Warzone",
+        url: "call-of-duty-warzone.html",
+        img: "imagens-games/call-of-duty-warzone.jpg"
+    },
+
+    {
+        name: "Marvel Rivals",
+        url: "marvel-rivals.html",
+        img: "imagens-games/marvel-rivals.jpg"
+    },
+
+    {
+        name: "Valorant",
+        url: "valorant.html",
+        img: "imagens-games/valorant.jpg"
+    },
+
+    {
+        name: "The Last Of Us Part I",
+        url: "the-last-of-us-part1.html",
+        img: "imagens-games/the-last-of-us-part1.jfif"
+    },
+
+    {
+        name: "Forza MotorSport",
+        url: "forza-motorsport.html",
+        img: "imagens-games/forza-motorsport.jpg"
+    },
+
+    {
+        name: "Horizon Zero Dawn Remastered",
+        url: "horizon-dawn.html",
+        img: "imagens-games/horizon-zero-dawn-remastered.jfif"
+    },
+    {
+        name: "Avowed",
+        url: "avowed.html",
+        img: "imagens-games/avowed.jpg"
+    },
+
+    {
+        name: "Flight Simulator",
+        url: "flight-simulator.html",
+        img: "imagens-games/fliggt-simulator.jpg"
+    },
+
 
 ];
 

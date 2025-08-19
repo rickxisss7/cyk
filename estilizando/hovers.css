@@ -6,3 +6,28 @@
     background-color: rgba(0, 0, 0, 0.8);
 
 }
+
+
+/* rodape */
+
+.suporte a:hover {
+color: white;
+transition: 0.2s ease-in-out;
+} 
+
+.created a:hover {
+color: white;
+transition: 0.2s ease-in-out;
+} 
+
+.links-footer a:hover {
+color: rgb(255, 255, 255);
+transition: 0.2s ease-in-out;
+} 
+
+
+.social-media img:hover {
+transition: 0.3s ease-in-out;
+transform: translateY(2px);
+} 
+

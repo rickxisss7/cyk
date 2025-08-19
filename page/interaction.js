@@ -60,7 +60,39 @@ const jogos = [
     preco2: 'R$ 240,00',
     link: ''
   }
+
 ];
+
+  jogos.forEach(img => {
+  const i = new Image();
+  i.src = img.src;
+});
+
+// test
+
+let carregadas = 0;
+jogos.forEach(img => {
+  const i = new Image();
+  i.src = img.src;
+  i.onload = () => {
+    carregadas++;
+    if (carregadas === imagens.length) {
+      iniciarCarrossel();
+    }
+  }
+});
+
+function iniciarCarrossel() {
+  let index = 0;
+  setInterval(() => {
+    document.getElementById("slide-img").src = imagens[index].src;
+    document.getElementById("").innerText = imagens[index].titulo;
+    index = (index + 1) % imagens.length;
+  }, 3000);
+}
+
+
+
 
 let indiceAtual = 0;
 
@@ -174,4 +206,8 @@ function adicionarAoCarrinho(jogo) {
     msg.style.display = 'none';
   }, 2000);
 }
+
+
+// loja
+
 

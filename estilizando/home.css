@@ -92,7 +92,6 @@ body {
 .suggestions a img {
     width: 100px;
     height: 40px;
-    object-fit: cover;
     border-radius: 6px;
 }
 
@@ -193,4 +192,12 @@ body {
     border: 1px solid #000000;
     border-radius: 4px;
     font-family: "Poppins", sans-serif;
+}
+
+.main-part1-mobile {
+    display: none;
+}
+
+.main-mobile-first {
+    display: none;
 }

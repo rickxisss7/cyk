@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte ccc</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #080808;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .container1 {
+            text-align: center;
+            margin-top: 30px;
+            
+
+        }
+
+         .container1 h1 {
+            margin-bottom: 20px;
+         }
+
+        .container1 a {
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 10px;
+
+        }
+
+        .inpt {
+            display: flex;
+            transform: translateY(450px);
+
+        }
+
+        .inpt input {
+            background-color: #383838;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+             outline: none; 
+            border: none;
+            width: 460px;
+            
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 10px;
+            color: white
+        }
+
+        .inpt img {
+            cursor: pointer;
+        }
+
+        .btn-enviar {
+          margin-top: 20px;
+        }
+
+        #chat {
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 30px;
+        }
+
+        .moldura {
+            background-color: rgb(26, 26, 26);
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html"><img src="logos/CYKLOGO-removebg-preview.png" alt="" width="80px" style="position: fixed; top: -10px;"></a>
+     <!-- <img src="icons/icons8-mensagem-de-bate-papo.gif" alt="" style="position: fixed; right: 30px; bottom: 30px; width: 38px; cursor: pointer;" id="chat"> -->
+    <main>
+        <div class="container1">
+            <h1>Fale com o chat</h1>
+            <div class="moldura">
+                <div class="inpt">
+                    <input type="text" placeholder="Digite seu problema" id="problem">
+                    <img src="icons/enviado.png" alt="" style="position: fixed; left: 455px; top: 7px;" >
+                </div>
+                <!-- <div class="btn-enviar"><a href="#">Enviar</a></div> -->
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

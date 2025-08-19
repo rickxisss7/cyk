@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Pagamento</title>
+</head>
+<body>
+
+<h1>Confirmar Pagamento</h1>
+<div id="lista-jogos"></div>
+
+<script>
+    const jogosParaPagar = JSON.parse(localStorage.getItem("carrinhoParaPagamento")) || [];
+    const lista = document.getElementById("lista-jogos");
+
+    if(jogosParaPagar.length === 0) {
+        lista.innerHTML = "<p>Nenhum jogo para pagar.</p>";
+    } else {
+        jogosParaPagar.forEach(jogo => {
+            lista.innerHTML += `
+                <div>
+                    <img src="${jogo.img}" width="100" alt="${jogo.name}">
+                    <p>${jogo.name}</p>
+                </div>
+            `;
+        });
+    }
+
+    // Aqui você pode implementar seu formulário de pagamento...
+</script>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ccc gaming</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        color: white;
+        background-color: #080808;
+    }
+
+    .header1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(10, 10, 10);
+    }
+
+    .menu-img {
+        cursor: pointer;
+    }
+
+    .menu-header {
+        display: flex;
+        gap: 30px;
+
+    }
+
+
+    .menu-header h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+
+
+    }
+
+    .menu-btn {
+        display: flex;
+        gap: 30px;
+
+    }
+
+    .menu-btn a {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: #ff3131;
+        padding: 6px;
+        width: 80px;
+        text-align: center;
+        border-radius: 6px;
+    }
+
+    .menu-btn .log {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+
+
+    /* javascript */
+    .menu-header {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .menu-header h1 {
+        transition: 0.3s;
+    }
+
+    .menu-header h1.active {
+        /* linha embaixo usando box-shadow */
+        box-shadow: 0px 2px 0px 0px rgba(255, 0, 0, 0.801);
+        color: #ffffff;
+        /* opcional: mudar cor ao estar ativo */
+    }
+
+    /* HOVERS */
+
+    .menu-btn .log:hover {
+        background-color: rgba(230, 230, 230, 0.856);
+        color: rgb(0, 0, 0);
+    }
+
+    .menu-btn .download:hover {
+        background-color: rgba(175, 6, 6, 0.856);
+        color: rgb(243, 243, 243);
+    }
+
+    /* main */
+
+    .main-part1 {
+        /* margin-top: 100px; */
+    }
+
+    .games-psn {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        /* transform: translateY(100px); */
+        text-align: center;
+        background-color: #006eff42;
+        padding: 20px;
+    }
+
+    .game-psn img {
+        width: 380px;
+        height: 210px;
+        
+        border-radius: 10px;
+    }
+
+    .game-psn {
+        cursor: pointer;
+        background-color: #ffffff0e;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .game-psn p {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .name-psn {
+        font-family: "Poppins", sans-serif;
+        font-size: 35px;
+        
+        
+    }
+
+    .fixed {
+        background-color: #1c59ff42;
+       padding: 10px;
+       text-align: center;
+       display: flex;
+       align-items: center;
+       gap: 10px;
+       justify-content: center;
+    
+    }
+
+    .price {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+
+    }
+
+    .fixed img {
+      width: 48px;
+      padding: 8px ;
+      background-color: rgba(255, 255, 255, 0.096);
+      border-radius: 20px;
+          cursor: pointer;
+    }
+
+    /* hovers */
+
+    .game-psn:hover {
+        /* transform: translateY(-10px); */
+        /* background-color: #ffffff48; */
+         box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.432);
+        transition: 0.3s ease-in-out;
+    }
+
+     .game-psn img:hover {
+         transform: translateY(-3px); 
+   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.349);
+       transition: 0.3s ease-in-out;
+    }
+
+
+</style>
+
+<body>
+    <header>
+        <div class="header1">
+            <div class="menu-img">
+                <a href="index.html"><img src="logos/CYKLOGO-removebg-preview.png" alt="" width="100px"></a>
+            </div>
+            <div class="menu-header">
+                <h1 id="active" class="active">Loja</h1>
+                <h1>Meu Carrinho</h1>
+                <h1>Suporte</h1>
+            </div>
+            <div class="menu-btn">
+                <a class="download" href="download/downloadapk.html">Download</a>
+                <a class="log" href="login/login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <div class="fixed">
+                 <!-- <h1 class="name-xbox">Xbox</h1>  -->
+                <img src="icons/icons8-playstation-50.png" alt="">
+            </div>
+            <div class="games-psn">
+                <div class="game-psn">
+                    <a href="god-of-war-ragnarock.html"><img src="imagens-games/god-of-war-ragnarock.jpg" alt="" id="on"></a>
+                    <!-- <p>Forza MotorSport</p> -->
+                    <!-- <a href="#" class="price">R$ 229,90</a> -->
+                </div>
+                <div class="game-psn">
+                    <a href="days-gone.html"><img src="imagens-games/daysgone.jpg" alt="" id="on"></a>
+                    <!-- <p>Avowed</p> -->
+                    <!-- <a href="#" class="price">R$ 210,00</a> -->
+                </div>
+                <div class="game-psn">
+                    <a href="the-last-of-us-resmatered.html"><img src="imagens-games/the-last-of-us-resmatered.jpg" alt="" id="on"></a>
+                    <!-- <p>Forza Horizon 5</p> -->
+                    <!-- <a href="#" class="price">R$ 230,00</a> -->
+                </div>
+                <div class="game-psn">
+                    <a href="uncharted.html"><img src="imagens-games/Uncharted-Legacy-of-Thieves-Collection.jpg" alt="" id="on"></a>
+                    <!-- <p>Flight Simulator</p> -->
+                    <!-- <a href="#" class="price">R$ 249,90</a> -->
+                </div>
+                <div class="game-psn">
+                    <a href=""><img src="imagens-games/spiderman-milesmorales.jfif" alt="" id="on"></a>
+                    <!-- <p>Flight Simulator</p> -->
+                    <!-- <a href="#" class="price">R$ 249,90</a> -->
+                </div>
+                <div class="game-psn">
+                    <a href="assasins-creed-valhalla.html"><img src="imagens-games/assassins-creed-valhalla.webp" alt="" id="on"></a>
+                    <!-- <p>Flight Simulator</p> -->
+                    <!-- <a href="#" class="price">R$ 249,90</a> -->
+                </div>
+                <div class="game-psn">
+                    <a href="silent-hill2.html"><img src="imagens-games/silent-hill2.jpg" alt="" id="on"></a>
+                    <!-- <p>Flight Simulator</p> -->
+                    <!-- <a href="#" class="price">R$ 249,90</a> -->
+                </div>
+                <div class="game-psn">
+                    <a href=""><img src="imagens-games/thewitcher3.jpeg" alt="" id="on"></a>
+                    <!-- <p>Flight Simulator</p> -->
+                    <!-- <a href="#" class="price">R$ 249,90</a> -->
+                </div>
+                <div class="game-psn">
+                    <a href="horizon-dawn.html"><img src="imagens-games/horizon-zero-dawn-remastered.jfif" alt="" id="on"></a>
+                    <!-- <p>Flight Simulator</p> -->
+                    <!-- <a href="#" class="price">R$ 249,90</a> -->
+                </div>
+                <div class="game-psn">
+                    <a href="spider-man-remastered.html"><img src="imagens-games/spider-man-remaster.jpg" alt="" id="on"></a>
+                    <!-- <p>Flight Simulator</p> -->
+                    <!-- <a href="#" class="price">R$ 249,90</a> -->
+                </div>
+                <div class="game-psn">
+                    <a href="the-last-of-us-part1.html"><img src="imagens-games/the-last-of-us-part1.jfif" alt="" id="on"></a>
+                    <!-- <p>Flight Simulator</p> -->
+                    <!-- <a href="#" class="price">R$ 249,90</a> -->
+                </div>
+                <div class="game-psn">
+                    <a href=""><img src="imagens-games/Ghost-of-Tsushima-.jpg" alt="" id="on"></a>
+                    <!-- <p>Flight Simulator</p> -->
+                    <!-- <a href="#" class="price">R$ 249,90</a> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="page/header.js"></script>
+    <script src="page/menu.js"></script>
+    <script src="page/site.js"></script>
+    <script src="page/rolagem.js"></script>
+    <script src="page/interaction.js"></script>
+    <script src="page/search.js"></script>
+    <script src="register/login.js"></script>
+    <script src="register/register.js"></script>
+    <script src="seu-script.js" defer></script>
+</body>
+
+</html>

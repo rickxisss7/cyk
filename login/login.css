@@ -24,11 +24,9 @@ width: 100px;
 }
 
 .container-log {
-
     display: flex;
     justify-content: center;
     margin-top: 20px;
-
 
 }
 
@@ -89,7 +87,7 @@ width: 100px;
     transform: translateX(-154px);
 }
 
-.login-google a {
+.login-google p {
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -151,7 +149,6 @@ width: 100px;
 
 }
 
-.ccc {}
 
 
 .login-psn {
@@ -172,7 +169,7 @@ width: 100px;
     transform: translateX(-138px);
 }
 
-.login-psn a {
+.login-psn p {
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -199,7 +196,7 @@ width: 100px;
     transform: translateX(-135px);
 }
 
-.login-epic a {
+.login-epic p {
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -226,7 +223,7 @@ width: 100px;
     transform: translateX(-157px);
 }
 
-.login-steam a {
+.login-steam p {
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -250,7 +247,7 @@ width: 100px;
     transform: translateX(-157px);
 }
 
-.login-apple a {
+.login-apple p {
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -280,4 +277,63 @@ width: 100px;
     display: flex;
     justify-content: center;
    margin-top: 5px;
+}
+
+@media (min-width: 0px) and (max-width: 768px)  {
+
+.login {
+    width: 60%;
+    height: 570px;
+    margin-bottom: 20px;
+}
+
+.login-google {
+    width: 250px;
+}
+
+.login-google img {
+    transform: translateX(-78px);
+}
+
+.login-epic {
+    width: 250px;
+}
+
+.login-epic img {
+    transform: translateX(-62px);
+}
+
+.login-steam {
+    width: 250px;
+}
+
+.login-steam img {
+    transform: translateX(-80px);
+}
+
+.login-psn {
+    width: 250px;
+}
+
+.login-psn img {
+    transform: translateX(-64px);
+}
+
+.login-apple {
+    width: 250px;
+}
+
+.login-apple img {
+    transform: translateX(-82px);
+}
+
+.logo {
+    transform: translateX(400px);
+    margin-top: -30px;
+}
+
+.logo img {
+    width: 80px;
+}
+
 }

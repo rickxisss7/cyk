@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(8, 8, 8);
+            font-family: "Poppins", sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(22, 22, 22, 0.534);
+            width: 80%;
+            margin: 5px auto;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+            box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.158);
+
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .item p {
+            font-weight: 500;
+            font-size: 17px;
+            font-family: "Roboto", sans-serif;
+            margin-left: 10px;
+        }
+
+
+
+
+        button {
+            background: red;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .text-car h1 {
+            
+            font-size: 25px;
+            padding: 30px;
+        }
+
+        .item img {
+            width: 200px;
+            height: 100px;
+            max-width: 250px;
+            border-radius: 5px;
+        }
+
+        .contt p {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .contt {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .btn-finishbuy {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+            font-weight: 800;
+        }
+
+        .btn-finishbuy button {
+            font-weight: 600;
+            font-size: 14px;
+            padding: 16px;
+            letter-spacing: 1px;
+        }
+
+        .botao button {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="text-car">
+            <h1>Seu Carrinho</h1>
+        </div>
+
+        <div id="carrinho"></div>
+
+        <div class="btn-finishbuy">
+            <button id="finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+    </main>
+
+
+
+    <script>
+        function carregarCarrinho() {
+            const carrinhoContainer = document.getElementById("carrinho");
+            const btnFinalizar = document.getElementById("finalizar");
+            let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+            if (carrinho.length === 0) {
+                carrinhoContainer.innerHTML = "<p>Seu carrinho está vazio</p>";
+                btnFinalizar.style.display = "none"; // esconde o botão
+                return;
+            }
+
+            carrinhoContainer.innerHTML = "";
+            carrinho.forEach((jogo, index) => {
+                carrinhoContainer.innerHTML += `
+                    <div class="container">
+                           <div class="item">
+                            <img src="${jogo.img}" alt="${jogo.name}">
+                            <p>${jogo.name}</p>
+                           </div>
+                            <div class="contt">
+                                <div class="botao">
+                                    <button onclick="removerItem(${index})">Remover</button>
+                                    </div>
+                            </div>
+                    </div>
+            `;
+            });
+            btnFinalizar.style.display = "block"; // mostra o botão
+        }
+        // <a href="${jogo.url}">Ver jogo</a> 
+        function removerItem(index) {
+            let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            carrinho.splice(index, 1); // Remove só o item clicado
+            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+            carregarCarrinho(); // Recarrega a lista
+        }
+
+        carregarCarrinho();
+
+        function finalizarCompra() {
+            const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+            if (carrinho.length === 0) {
+                alert("Seu carrinho está vazio!");
+                return;
+            }
+            localStorage.setItem("carrinhoParaPagamento", JSON.stringify(carrinho));
+            window.location.href = "pagamento.html";
+        }
+
+        // teste 
+
+
+
+    </script>
+
+</body>
+
+</html>

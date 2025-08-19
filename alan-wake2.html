@@ -44,13 +44,13 @@
             </div>
             <div class="menu-interact">
                 <a href="#">Ofertas</a>
-                <div class="xbox">
-                    <a href="#">Xbox</a>
-                    <img src="../icons/xbox.png" alt="" width="18px">
-                </div>
+                    <div class="xbox">
+                        <a href="xbox.html">Xbox</a>
+                        <a href="xbox.html"><img src="icons/xbox.png" alt="" width="18px"></a>
+                    </div>
                 <div class="playstation">
-                    <a href="#">Playstation</a>
-                    <img src="../icons/playstation.png" alt="" width="18px">
+                    <a href="playstation.html">Playstation</a>
+                    <a href="playstation.html"><img src="icons/playstation.png" alt="" width="18px"></a>
                 </div>
             </div>
         </div>
@@ -62,14 +62,19 @@
                 <p class="dscnt"> R$ 359,90</p>
                 <p class="buyy"> R$ 280,00</p>
                 <div class="car-buy">
-                    <a href="../biblioteca/book.html" id="carrinho">Adicionar ao Carrinho</a>
-                    <a href="#">Compre Aqui</a>
+                    <!-- <a href="../biblioteca/book.html" id="carrinho">Adicionar ao Carrinho</a> -->
+                    <button onclick="addByName('Alan Wake 2')" class="add-car">
+                        Adicionar ao Carrinho
+                    </button>
+                    <button class="buy-here">Compre Aqui</button>
+
                 </div>
             </div>
             <div class="elden-ring2">
                 <!-- <video src="../videos-games/elden-ring.webm" autoplay muted></video> -->
                 <div class="carrossel">
-                    <img id="imagem-principal" class="imagem-principal" src="img-/alan-wake-1.jpg" alt="Imagem principal">
+                    <img id="imagem-principal" class="imagem-principal" src="img-/alan-wake-1.jpg"
+                        alt="Imagem principal">
 
                     <div class="miniaturas">
                         <img src="img-/alan-wake-1.jpg" class="selecionada" alt="thumb1">
@@ -91,6 +96,7 @@
     <script src="register/login.js"></script>
     <script src="register/register.js"></script>
     <script src="alan-wake2.js"></script>
+    <script src="carrinho.js"></script>
 </body>
 
 </html>

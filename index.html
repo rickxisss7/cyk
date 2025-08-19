@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="mediaqueries/mobile.css">
     <link rel="stylesheet" href="mediaqueries/tablet.css">
     <link rel="stylesheet" href="mediaqueries/televisoes.css">
+    <link rel="stylesheet" href="mediaqueries/width-500px.css">
 </head>
 
 <body>
@@ -44,13 +45,15 @@
 
             </div>
             <div class="menu-interact">
-                <a href="#">Ofertas</a>
+                <a href="ofertas.html">Ofertas</a>
+
                 <div class="xbox">
-                    <a href="#">Xbox</a>
+                    <a href="xbox.html">Xbox</a>
                     <img src="icons/xbox.png" alt="" width="18px">
                 </div>
+
                 <div class="playstation">
-                    <a href="#">Playstation</a>
+                    <a href="playstation.html">Playstation</a>
                     <img src="icons/playstation.png" alt="" width="18px">
                 </div>
             </div>
@@ -66,7 +69,7 @@
                 <h2>Assassin's Creed Valhalla</h2>
             </div>
             <div class="game">
-                <a href="forza.html"><img src="imagens-games/forzacapa.avif" alt=""></a>
+                <a href="forza.html"><img src="imagens-games/Capa_de_Forza_Horizon_5.jpg" alt=""></a>
                 <h2>Forza Horizon 5</h2>
 
             </div>
@@ -76,7 +79,7 @@
 
             </div>
             <div class="game">
-                <a href="red-dead2.html"><img src="imagens-games/reddead2.avif" alt=""></a>
+                <a href="red-dead2.html"><img src="imagens-games/Red_Dead_Redemption_2.png" alt=""></a>
                 <h2>Red Dead Redemption II</h2>
 
             </div>
@@ -124,26 +127,69 @@
                 <a href="dragon-ball-sparking-zero.html"><img src="imagens-games/sparkingzero.avif" alt=""></a>
                 <h2>Dragon Ball Sparking Zero</h2>
             </div>
-                <div class="game">
+            <div class="game">
                 <a href="metro-exodus.html"><img src="imagens-games/Metro_Exodus_capa.png" alt=""></a>
                 <h2>Metro Exodus</h2>
             </div>
             <button class="arrow right">&#10095;</button>
         </div>
 
+        <div class="main-mobile-first">
+            <div>
+                <img src="imagens-games/Call of Duty Black Ops 6.jpg" alt="" style=" width: 200px; height: 130px; border-radius: 10px;">
+            </div>
+            <div>
+                <img src="imagens-games/call-of-duty-modern-warfare3.jpg" alt="" style="width: 200px; height: 130px; border-radius: 10px">
+            </div>
+             <div>
+                <img src="imagens-games/call-of-duty-modern-warfare2.jpg" alt="" style="width: 200px; height: 130px; border-radius: 10px">
+            </div>
+             <div>
+                <img src="imagens-games/codvanguard.webp" alt="" style="width: 200px; height: 130px; border-radius: 10px">
+            </div>
+        </div>
+
+        <div class="main-part1-mobile">
+            <p class="jon"><span class="arrow-right"></span></p>
+            <div class="games-online">
+                <div class="game-online">
+                    <a href="fortnite.html"><img src="imagens-games/fortnite-capa.avif" alt="" id="on"></a>
+                    <p>Fortnite</p>
+                    
+                </div>
+                <div class="game-online">
+                    <a href="call-of-duty-warzone.html"><img src="imagens-games/call-of-duty-warzone-capa.avif" alt=""
+                            id="on"></a>
+                    <p>Call of Duty Warzone</p>
+                   
+                </div>
+                <div class="game-online">
+                    <a href="valorant.html"><img src="imagens-games/valorantt.jpg" alt="" id="on"></a>
+                    <p>Valorant</p>
+                    
+                </div>
+                <div class="game-online">
+                    <a href="marvel-rivals.html"><img src="imagens-games/marvel-rivals-capa.png" alt="" id="on"></a>
+                    <p>Marvel Rivals</p>
+                    
+                </div>
+            </div>
+        </div>
+
         <div class="main-part1">
 
             <div class="slider">
                 <div class="slide-content">
-                    <a id="slide-link" href="#"><img id="slide-img" src="img-/god-of-war-ragnarock.jpg" alt="imagem"></a>
-                     <a id="info-link" href=""> 
-                        <div class="info">
-                            <h2 id="game-title">Nome do Jogo 1</h2>
-                            <p id="game-desc">Descrição ou especificações do jogo 1</p>
-                            <span id="game-price">R$ 199,90</span>
-                            <h3 id="game-price2">R$ 128,00</h3>
-                        </div>
-                     </a> 
+                    <a id="slide-link" href="#"><img id="slide-img" src="imagens-games/god-of-war-ragnarock.jpg"
+                            alt="imagem"></a>
+
+                    <div class="info">
+                        <h2 id="game-title"></h2>
+                        <p id="game-desc">Descrição ou especificações do jogo 1</p>
+                        <span id="game-price">R$ 199,90</span>
+                        <h3 id="game-price2">R$ 128,00</h3>
+                    </div>
+
                 </div>
                 <div>
                     <button id="prev">←</button>
@@ -164,7 +210,8 @@
                     <a href="#" class="free">Gratuito</a>
                 </div>
                 <div class="game-online">
-                    <a href="call-of-duty-warzone.html"><img src="imagens-games/cod-warzone.jpg" alt="" id="on"></a>
+                    <a href="call-of-duty-warzone.html"><img src="imagens-games/call-of-duty-warzone-capa.avif" alt=""
+                            id="on"></a>
                     <p>Call of Duty Warzone</p>
                     <a href="#" class="free">Gratuito</a>
                 </div>
@@ -190,9 +237,9 @@
                         <p>F1 25</p>
                         <a href="#" class="price">R$ 249,90</a>
                     </div>
-                    <div class="carrinho-btn">
+                    <!-- <div class="carrinho-btn">
                         <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('F1 25')">
-                    </div>
+                    </div> -->
                 </div>
                 <div>
                     <div class="game-launch">
@@ -200,36 +247,260 @@
                         <p>Alan Wake II</p>
                         <a href="#" class="price">R$ 230,00</a>
                     </div>
-                    <div class="carrinho-btn">
+                    <!-- <div class="carrinho-btn">
                         <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Alan Wake II')">
-                    </div>
+                    </div> -->
                 </div>
                 <div>
                     <div class="game-launch">
-                        <a href="mortal-komat1.html"><img src="imagens-games/mortal-kombat1-capa.jpg" alt="" id="on"></a>
+                        <a href="mortal-komat1.html"><img src="imagens-games/Mortal_Kombat_1_PS5_capa_digital.png"
+                                alt="" id="on"></a>
                         <p>Mortal Kombat 1</p>
                         <a href="#" class="price">R$ 210,00</a>
                     </div>
-                    <div class="carrinho-btn">
+                    <!-- <div class="carrinho-btn">
                         <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Mortal Kombat 1')">
-                    </div>
+                    </div> -->
                 </div>
                 <div>
                     <div class="game-launch">
-                        <a href="spider-man-remastered.html"><img src="imagens-games/spiderman-capa.jpeg" alt="" id="on"></a>
+                        <a href="spider-man-remastered.html"><img src="imagens-games/spiderman-capa.jpeg" alt=""
+                                id="on"></a>
                         <p>Spider Man Remastered</p>
                         <a href="#" class="price">R$ 229,90</a>
                     </div>
-                    <div class="carrinho-btn">
+                    <!-- <div class="carrinho-btn">
                         <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Spider Man Remastered')">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
 
-        <div id="mensagem"></div>
+        <div class="main-part4">
+            <p class="jon"> Ofertas <span class="arrow-right"> → </span></p>
+            <div class="games-releases" id="carousel">
+                <div>
+                    <div class="game-launch2">
+                        <a href="hogwarts-legacy.html"><img src="imagens-games/Hogwarts_Legacy_capa.jpeg" alt=""
+                                id="on"></a>
+                        <p>Hogwarts Legacy</p>
+                        <div class="ofert">
+                            <a href="#" class="price-descount">R$ 289,90</a>
+                            <a href="#" class="descount">R$ 180,00</a>
+                        </div>
+                    </div>
+                    <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('F1 25')">
+                    </div> -->
+                </div>
+                <div>
+                    <div class="game-launch2">
+                        <a href="eafc-25.html"><img src="imagens-games/fifa25-.avif" alt="" id="on"></a>
+                        <p> FC 25 </p>
+                        <div class="ofert">
+                            <a href="#" class="price-descount">R$ 360,00</a>
+                            <a href="#" class="descount">R$ 280,00</a>
+                        </div>
+                    </div>
+                    <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Alan Wake II')">
+                    </div> -->
+                </div>
+                <div>
+                    <div class="game-launch2">
+                        <a href="black-myth-wukong.html"><img src="imagens-games/black-myth-capa.avif" alt=""
+                                id="on"></a>
+                        <p>Black Myth Wukong</p>
+                        <div class="ofert">
+                            <a href="#" class="price-descount">R$ 260,00</a>
+                            <a href="#" class="descount">R$ 199,90</a>
+                        </div>
+                    </div>
+                    <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Mortal Kombat 1')">
+                    </div> -->
+                </div>
+                <div>
+                    <div class="game-launch2">
+                        <a href="silent-hill2.html"><img src="imagens-games/silent hill 2-capa.avif" alt="" id="on"></a>
+                        <p>Silent Hill 2</p>
+                        <div class="ofert">
+                            <a href="#" class="price-descount">R$ 330,00</a>
+                            <a href="#" class="descount">R$ 230,00</a>
+                        </div>
+                    </div>
+                    <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Spider Man Remastered')">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="main-part5">
+            <div>
+                <p class="jon" id="playstation-store"> Playstation <span class="arrow-right"> → </span></p>
+            </div>
+            <div class="games-releases3">
+                <div>
+                    <div class="game-launch3">
+                        <a href="days-gone.html"><img src="imagens-games/days-gone-capa2.webp" alt="" id="on"></a>
+                        <p>Days Gone</p>
+                        <a href="#" class="price">R$ 249,90</a>
+                    </div>
+                    <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('F1 25')">
+                    </div> -->
+                </div>
+                <div>
+                    <div class="game-launch3">
+                        <a href="uncharted.html"><img src="imagens-games/UNCHARTED Coleção Legado dos Ladrões.avif"
+                                alt="" id="on"></a>
+                        <p>Uncharted</p>
+                        <a href="#" class="price">R$ 230,00</a>
+                    </div>
+                    <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Alan Wake II')">
+                    </div> -->
+                </div>
+                <div>
+                    <div class="game-launch3">
+                        <a href="horizon-dawn.html"><img src="imagens-games/horizon-zero-dawn-capa.avif" alt=""
+                                id="on"></a>
+                        <p>Horizon Zero Dawn Remastered</p>
+                        <a href="#" class="price">R$ 229,90</a>
+                    </div>
+                    <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Mortal Kombat 1')">
+                    </div> -->
+                </div>
+                <div>
+                    <div class="game-launch3">
+                        <a href="the-last-of-us-part1.html"><img src="imagens-games/the-last-os-us-part1.webp" alt=""
+                                id="on"></a>
+                        <p>The Last Of Us - Part I</p>
+                        <a href="#" class="price">R$ 289,90</a>
+                    </div>
+                    <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Spider Man Remastered')">
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="main-part6">
+                <div>
+                    <p class="jon" id="xbox-store"> Xbox <span class="arrow-right"> → </span></p>
+                </div>
+                <div class="games-releases4">
+                    <div>
+                        <div class="game-launch4">
+                            <a href="flight-simulator.html"><img
+                                    src="imagens-games/Microsoft_Flight_Simulator_2024_capa.png" alt="" id="on"></a>
+                            <p>Flight Simulator</p>
+                            <a href="#" class="price">R$ 249,90</a>
+                        </div>
+                        <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('F1 25')">
+                    </div> -->
+                    </div>
+                    <div>
+                        <div class="game-launch4">
+                            <a href="forza.html"><img src="imagens-games/forzacapa.avif" alt="" id="on"></a>
+                            <p>Forza Horizon 5</p>
+                            <a href="#" class="price">R$ 230,00</a>
+                        </div>
+                        <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Alan Wake II')">
+                    </div> -->
+                    </div>
+                    <div>
+                        <div class="game-launch4">
+                            <a href="avowed.html"><img src="imagens-games/avowed3.jpg" alt="" id="on"></a>
+                            <p>Avowed</p>
+                            <a href="#" class="price">R$ 210,00</a>
+                        </div>
+                        <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Mortal Kombat 1')">
+                    </div> -->
+                    </div>
+                    <div>
+                        <div class="game-launch4">
+                            <a href="forza-motorsport.html"><img src="imagens-games/forza-motoesport.jpg" alt=""
+                                    id="on"></a>
+                            <p>Forza MotorSport</p>
+                            <a href="#" class="price">R$ 229,90</a>
+                        </div>
+                        <!-- <div class="carrinho-btn">
+                        <img src="icons/carr.png" alt="" onclick="adicionarAoCarrinho('Spider Man Remastered')">
+                    </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="mensagem"></div>
 
     </main>
+
+    <footer>
+        <div class="rodape">
+            <div class="cyk">
+                <h1>CYK GAMING</h1>
+                <div class="links-footer">
+                    <a href="games.html">Games</a>
+                    <a href="playstation.html"> Playstation </a>
+                    <a href="xbox.html"> Xbox </a>
+                    <a href="ofertas.html"> Ofertas </a>
+                </div>
+            </div>
+            <div class="dev">
+                <h1>DEVELOPERS</h1>
+                <div class="links-footer">
+                    <a href=""> Colors </a>
+                    <a href=""> Images </a>
+                    <a href=""> Fonts </a>
+                </div>
+            </div>
+
+            <div class="social-media">
+                <h1>SOCIAL MEDIA</h1>
+                <div class="icons-medias">
+                    <a href=""><img src="icons/youtube.png" alt=""></a>
+                    <a href=""><img src="icons/git-hub.png" alt=""></a>
+                    <a href=""><img src="icons/instagram.png" alt=""></a>
+                    <a href=""><img src="icons/tik-tok.png" alt=""></a>
+                    <a href=""><img src="icons/x.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="cop">
+                <h1>COPYRIGHT RESERVED</h1>
+                <div class="copyright">
+                    <p>© 2025 Sony Interactive Entertainment LLC</p>
+                    <p>© 2025 Playstation</p>
+                    <p>© 2025 Microsoft</p>
+                    <p>© 2025 Epic Games</p>
+                </div>
+            </div>
+
+            <div class="serv">
+                <h1>SERVICES</h1>
+                <div class="suporte">
+                    <a href="suporte.html">Suporte</a>
+                    <a href="chat.html">Chat</a>
+                </div>
+            </div>
+
+            <div class="created">
+                <h1>CREATED BY:</h1>
+                <div><a href="">Rck Dev</a></div>
+                <br>
+                <p style="color: red; font-size: 20px;">ATENÇÃO !!</p>
+                <p>WEBSITE CREATED FOR STUDIES</p>
+                <p>SITE CRIADO PARA ESTUDOS</p>
+            </div>
+
+        </div>
+    </footer>
 
 
 
