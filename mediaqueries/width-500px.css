@@ -1,9 +1,22 @@
 @media (min-width: 0px) and (max-width: 445px) {
     .main-mobile-first {
-        display: flex;
-        flex-direction: column;
-        width: 220px;
-        gap: 20px;
-       
+        width: 80%;
+        text-align: center;
+        
+        
+    }
+
+    .img-mobile img {
+        width: 100%;
+    }
+
+    #slide-img {
+        width: 100%;
+    }
+
+    .slider  {
+        padding: 10px;
+        width: 100%;
+        border-radius: 0px;
     }
 }

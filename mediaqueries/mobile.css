@@ -360,7 +360,6 @@
   .main-mobile-first {
     display: grid;
     width: 410px;
-    
     background-color: #0e0e0e;
     padding: 10px;
     grid-template-columns: 1fr 1fr;
@@ -372,4 +371,7 @@
     border-radius: 10px;
   }
 
+  .img-mobile img {
+    width: 200px;
+  }
 }
