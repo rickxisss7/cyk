@@ -24,19 +24,20 @@
 
   .suggestions {
    transform: translateX(125px);
+   margin: 0 auto;
+   
   }
 
   #suggestions {
     width: 330px;
     /* transform: translateX(11px); */
-    top: 0;
+    /* top: 0; */
     /* ou o valor que você precisa */
-    left: 0;
+    /* left: 0; */
     /* ou onde você quiser */
     z-index: 9999;
     /* garante que fique acima */
     margin: 0 auto;
-    text-align: center;
 
   }
 

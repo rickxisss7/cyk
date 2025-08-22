@@ -1,208 +1,208 @@
  * {
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
  }
- 
+
  body {
-    background: #080808;
-    color: #f5f5f5;
-   
-  }
+   background: #080808;
+   color: #f5f5f5;
 
-  footer {
-    margin-top: 40px;
-    padding: 20px;
-    text-align: center;
-    background: #000;
-    border-top: 2px solid #444;
-    font-size: 0.9rem;
-  }
+ }
 
-  /* search */
+ footer {
+   margin-top: 40px;
+   padding: 20px;
+   text-align: center;
+   background: #000;
+   border-top: 2px solid #444;
+   font-size: 0.9rem;
+ }
 
-  .search-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    transform: translateX(-200px);
-    margin-top: 30px;
+ /* search */
 
-}
+ .search-menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   transform: translateX(-200px);
+   margin-top: 30px;
 
-
-.search-box {
-    position: relative;
-    max-width: 400px;
-    /* margin: 40px auto; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.search-box input {
-    width: 100%;
-    padding: 8px 15px;
-    font-size: 16px;
-    border-radius: 8px;
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    outline: none;
-    border: none;
-    background-color: #222;
-    color: #fff;
-    transition: 0.3s;
-   
-}
-
-.menu-interact a {
-    text-decoration: none;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-
-}
-
-.suggestions {
-    position: absolute;
-    width: 250%;
-    top: 120%;
-    left: 0;
-    padding: 5px;
-    right: 0;
-    background-color: rgba(128, 128, 128, 0.068);
-    /* cinza translúcido */
-    backdrop-filter: blur(20px);
-    /* intensidade do desfoque */
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid #333;
-    border-radius: 8px 8px 8px 8px;
-    max-height: 250px;
-    overflow-y: visible;
-    display: none;
-    z-index: 999;
-}
-
-.suggestions a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 8px 15px;
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 0.5px solid #33333317;
-    transition: background 0.2s;
-}
-
-.suggestions a img {
-    width: 100px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 6px;
-}
+ }
 
 
+ .search-box {
+   position: relative;
+   max-width: 400px;
+   /* margin: 40px auto; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+ }
 
-.suggestions::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari */
-}
+ .search-box input {
+   width: 100%;
+   padding: 8px 15px;
+   font-size: 16px;
+   border-radius: 8px;
+   font-family: "Poppins", sans-serif;
+   font-size: 13px;
+   outline: none;
+   border: none;
+   background-color: #222;
+   color: #fff;
+   transition: 0.3s;
+
+ }
+
+ .menu-interact a {
+   text-decoration: none;
+   color: white;
+   font-family: "Poppins", sans-serif;
+   font-size: 15px;
+
+ }
+
+ .suggestions {
+   position: absolute;
+   width: 250%;
+   top: 120%;
+   left: 0;
+   padding: 5px;
+   right: 0;
+   background-color: rgba(128, 128, 128, 0.068);
+   /* cinza translúcido */
+   backdrop-filter: blur(20px);
+   /* intensidade do desfoque */
+   -webkit-backdrop-filter: blur(10px);
+   border: 1px solid #333;
+   border-radius: 8px 8px 8px 8px;
+   max-height: 250px;
+   overflow-y: visible;
+   display: none;
+   z-index: 999;
+ }
+
+ .suggestions a {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-family: "Poppins", sans-serif;
+   font-size: 14px;
+   font-weight: 600;
+   padding: 8px 15px;
+   color: #fff;
+   text-decoration: none;
+   border-bottom: 0.5px solid #33333317;
+   transition: background 0.2s;
+ }
+
+ .suggestions a img {
+   width: 100px;
+   height: 40px;
+   object-fit: cover;
+   border-radius: 6px;
+ }
 
 
-.load-more-item {
-    display: block;
-    width: 100%;
-    text-align: start;
-    padding: 12px;
-    background-color: #22222200;
-    color: #ffffff;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    border-radius: 0 0 8px 8px;
-}
 
-.xbox {
-    display: flex;
-    align-items: center;
-
-    gap: 5px;
-    cursor: pointer;
-}
-
-.xbox a {
-    color: rgb(255, 255, 255);
-}
-
-.playstation {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.playstation a {
-    color: rgb(255, 255, 255);
-}
-
-.menu-interact {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-}
+ .suggestions::-webkit-scrollbar {
+   display: none;
+   /* Chrome, Safari */
+ }
 
 
-  /* estilizando */
+ .load-more-item {
+   display: block;
+   width: 100%;
+   text-align: start;
+   padding: 12px;
+   background-color: #22222200;
+   color: #ffffff;
+   font-weight: bold;
+   border: none;
+   cursor: pointer;
+   font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   border-radius: 0 0 8px 8px;
+ }
 
-  .container-ring {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 20px;
-  }
+ .xbox {
+   display: flex;
+   align-items: center;
 
-  .elden-ring {
-    width: 400px;
-    
+   gap: 5px;
+   cursor: pointer;
+ }
 
-    
-  }
+ .xbox a {
+   color: rgb(255, 255, 255);
+ }
 
-  .elden-ring img {
-    width: 400px;
-    border-radius: 15px;
-  }
+ .playstation {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   cursor: pointer;
+ }
 
-  .eld {
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    
-    
-  }
+ .playstation a {
+   color: rgb(255, 255, 255);
+ }
 
-  .elden-ring2 video {
-width: 600px;
-border-radius: 10px;
-  }
+ .menu-interact {
+   display: flex;
+   gap: 30px;
+   align-items: center;
+   justify-content: center;
+ }
 
-  .car-buy {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    margin-top: 30px;
-   
-  }
 
-.add-car {
-     font-family: "Poppins", sans-serif;
+ /* estilizando */
+
+ .container-ring {
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+   margin-top: 20px;
+ }
+
+ .elden-ring {
+   width: 400px;
+
+
+
+ }
+
+ .elden-ring img {
+   width: 400px;
+   border-radius: 15px;
+ }
+
+ .eld {
+   font-family: "Poppins", sans-serif;
+   font-size: 13px;
+
+
+ }
+
+ .elden-ring2 video {
+   width: 600px;
+   border-radius: 10px;
+ }
+
+ .car-buy {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   align-items: center;
+   margin-top: 30px;
+
+ }
+
+ .add-car {
+   font-family: "Poppins", sans-serif;
    font-weight: 500;
    font-size: 15px;
    background-color: rgb(255, 255, 255);
@@ -232,145 +232,165 @@ border-radius: 10px;
  }
 
 
-.dscnt {
-    text-decoration: line-through;
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    color: #727272af;
-}
+ .dscnt {
+   text-decoration: line-through;
+   font-family: "Poppins", sans-serif;
+   font-size: 12px;
+   color: #727272af;
+ }
 
-.buyy {
-      font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-}
+ .buyy {
+   font-family: "Poppins", sans-serif;
+   font-size: 16px;
+   color: rgb(255, 255, 255);
+ }
 
 
-/* test */
+ /* test */
 
  .carrossel {
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
-  }
-  .imagem-principal {
-    width: 100%;
-    height: 370px;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 0 20px rgba(0,0,0,0.6);
-    margin-bottom: 15px;
-    transition: opacity 0.3s;
-  }
-  .miniaturas {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  .miniaturas img {
-    width: 130px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 5px;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: transform 0.2s, opacity 0.2s;
-  }
-  .miniaturas img:hover {
-    transform: scale(1.05);
-    opacity: 1;
-  }
-  .miniaturas img.selecionada {
-    border: 2px solid #ffcc00;
-    opacity: 1;
-  }
+   max-width: 800px;
+   width: 100%;
+   text-align: center;
+ }
 
-    .area-principal video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+ .imagem-principal {
+   width: 100%;
+   height: 370px;
+   border-radius: 10px;
+   object-fit: cover;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+   margin-bottom: 15px;
+   transition: opacity 0.3s;
+ }
 
+ .miniaturas {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   flex-wrap: wrap;
+ }
 
-  
-  .car-buy a:hover {
-    background-color: rgb(138, 6, 6);
-    transition: 0.1s ease-in-out;
-  }
+ .miniaturas img {
+   width: 130px;
+   height: 50px;
+   object-fit: cover;
+   border-radius: 5px;
+   cursor: pointer;
+   opacity: 0.6;
+   transition: transform 0.2s, opacity 0.2s;
+ }
 
-  #carrinho:hover {
-    background-color: rgb(223, 223, 223);
-    transition: 0.1s ease-in-out;
-  }
+ .miniaturas img:hover {
+   transform: scale(1.05);
+   opacity: 1;
+ }
+
+ .miniaturas img.selecionada {
+   border: 2px solid #ffcc00;
+   opacity: 1;
+ }
+
+ .area-principal video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
 
 
-    /* mediaqueries */
+
+ .car-buy a:hover {
+   background-color: rgb(138, 6, 6);
+   transition: 0.1s ease-in-out;
+ }
+
+ #carrinho:hover {
+   background-color: rgb(223, 223, 223);
+   transition: 0.1s ease-in-out;
+ }
+
+
+ /* mediaqueries */
 
  @media (min-width: 0px) and (max-width: 768px) {
-  .menu-header {
-    display: none;
-  }
-.download {
-  display: none;
-}
+   .menu-header {
+     display: none;
+   }
 
-.menu-interact {
-  display: none;
-}
+   .download {
+     display: none;
+   }
 
-.container-ring {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-}
+   .menu-interact {
+     display: none;
+   }
 
-.imagem-principal {
-width: 85%;
-height: 220px;
-}
+   .container-ring {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 0 auto;
+   }
 
-.miniaturas img {
-  width: 180px;
-  height: 40px;
-}
+   .imagem-principal {
+     width: 85%;
+     height: 220px;
+   }
 
-.elden-ring {
- display: flex;
- flex-direction: column;
- align-items: center;
- margin: 0 auto;
-  
-}
+   .miniaturas img {
+     width: 180px;
+     height: 40px;
+   }
 
-.elden-ring img {
-  width: 380px;
-  height: 180px;
- margin-top: 50px;
- margin-bottom: 5px;
-}
+   .elden-ring {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0 auto;
 
-.elden-ring p {
- margin: 1px;
-}
+   }
 
-.car-buy {
-  margin: 10px auto;
-}
+   .elden-ring img {
+     width: 380px;
+     height: 180px;
+     margin-top: 50px;
+     margin-bottom: 5px;
+   }
+
+   .elden-ring p {
+     margin: 1px;
+   }
+
+   .car-buy {
+     margin: 10px auto;
+   }
 
 
-.search-box input{
-  width: 100%;
-  transform: translateX(100px);
-}
+   .search-box input {
+     width: 60%;
+     transform: translateX(200px);
+     z-index: 999;
+   }
 
-.suggestions {
-  width: 200%;
-  left: 100px;
+   .suggestions {
+     transform: translateX(125px);
 
-}
+   }
+
+   #suggestions {
+     width: 330px;
+     /* transform: translateX(11px); */
+     top: 0;
+     /* ou o valor que você precisa */
+     left: 0;
+     /* ou onde você quiser */
+     z-index: 9999;
+     /* garante que fique acima */
+     margin: 0 auto;
+     text-align: center;
+
+   }
  }
