@@ -330,72 +330,88 @@
             transition: 0.1s ease-in-out;
         }
 
-          /* mediaqueries */
+        /* mediaqueries */
 
- @media (min-width: 0px) and (max-width: 768px) {
-  .menu-header {
-    display: none;
-  }
-.download {
-  display: none;
-}
+        @media (min-width: 0px) and (max-width: 768px) {
+            .menu-header {
+                display: none;
+            }
 
-.menu-interact {
-  display: none;
-}
+            .download {
+                display: none;
+            }
 
-.container-ring {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-}
+            .menu-interact {
+                display: none;
+            }
 
-.imagem-principal {
-width: 85%;
-height: 220px;
-}
+            .container-ring {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 auto;
+            }
 
-.miniaturas img {
-  width: 180px;
-  height: 40px;
-}
+            .imagem-principal {
+                width: 85%;
+                height: 220px;
+            }
 
-.elden-ring {
- display: flex;
- flex-direction: column;
- align-items: center;
- margin: 0 auto;
-  
-}
+            .miniaturas img {
+                width: 180px;
+                height: 40px;
+            }
 
-.elden-ring img {
-  width: 380px;
-  height: 180px;
- margin-top: 50px;
- margin-bottom: 5px;
-}
+            .elden-ring {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 auto;
 
-.elden-ring p {
- margin: 1px;
-}
+            }
 
-.car-buy {
-  margin: 10px auto;
-}
+            .elden-ring img {
+                width: 90%;
+                height: 200px;
+                margin-top: 50px;
+                margin-bottom: 5px;
+            }
+
+            .elden-ring p {
+                margin: 1px;
+            }
+
+            .car-buy {
+                margin: 10px auto;
+            }
 
 
-.search-box input{
-  width: 100%;
-  transform: translateX(100px);
-}
+            .search-box input {
+                width: 60%;
+                transform: translateX(200px);
+                z-index: 999;
+            }
 
-.suggestions {
-  width: 200%;
-  left: 100px;
+            .suggestions {
+                transform: translateX(125px);
 
-}
- }
+            }
+
+            #suggestions {
+                width: 330px;
+                /* transform: translateX(11px); */
+                top: 0;
+                /* ou o valor que você precisa */
+                left: 0;
+                /* ou onde você quiser */
+                z-index: 9999;
+                /* garante que fique acima */
+                margin: 0 auto;
+                text-align: center;
+
+            }
+
+        }
     </style>
 </head>
 

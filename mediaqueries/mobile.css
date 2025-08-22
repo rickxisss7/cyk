@@ -22,16 +22,21 @@
     z-index: 999;
   }
 
+  .suggestions {
+   transform: translateX(125px);
+  }
+
   #suggestions {
-    width: 350px;
-    transform: translateX(115px);
+    width: 330px;
+    /* transform: translateX(11px); */
     top: 0;
     /* ou o valor que você precisa */
     left: 0;
     /* ou onde você quiser */
     z-index: 9999;
     /* garante que fique acima */
-
+    margin: 0 auto;
+    text-align: center;
 
   }
 
@@ -374,4 +379,12 @@
   .img-mobile img {
     width: 200px;
   }
+
+   #xbox-store {
+        margin: 0;
+    }
+
+     #playstation-store {
+        margin-left: 30px;
+    }
 }

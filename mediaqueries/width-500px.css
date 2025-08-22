@@ -2,8 +2,8 @@
     .main-mobile-first {
         width: 80%;
         text-align: center;
-        
-        
+
+
     }
 
     .img-mobile img {
@@ -14,9 +14,57 @@
         width: 100%;
     }
 
-    .slider  {
+    .slider {
         padding: 10px;
+        
+        border-radius: 10px;
+    }
+
+    .games-releases3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        
+    }
+
+    .game-launch3 {
         width: 100%;
-        border-radius: 0px;
+        padding: 5px;
+        
+
+    }
+
+    .game-launch3 img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .games-releases4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        
+    }
+
+    #xbox-store {
+        margin: 0;
+    }
+
+
+
+    .game-launch4 {
+        width: 100%;
+        padding: 5px;
+        
+
+    }
+
+    .game-launch4 img {
+        width: 100%;
+        height: 180px;
+    }
+
+    #playstation-store {
+        margin-left: 30px;
     }
 }
